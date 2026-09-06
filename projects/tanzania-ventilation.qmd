@@ -1,0 +1,30 @@
+---
+title: "Ventilation design as disease control"
+subtitle: "CFD and field instrumentation for experimental solar housing, Tanzania"
+date: "2022-12-01"
+categories: [CFD, thermal comfort, IoT, field deployment]
+---
+
+Research Assistant, Institute of Architecture and Technology, Royal Danish
+Academy, Copenhagen, 2021–2022.
+
+Airflow and thermal conditions in experimental solar housing, modelled as
+mesh-based RANS CFD in OpenFOAM and ANSYS Fluent. The design objective was not
+comfort alone: ventilation was the intervention being tested for mosquito
+control, so the model had to hold up as a health claim and not only as a physics
+result. That constraint is what pushed the work from simulation into measurement.
+
+## Measuring the thing you modelled
+
+I assembled Internet-of-Things sensor units, deployed them on site in Tanzania,
+and monitored them remotely from Copenhagen over a six-month campaign. Model
+output was validated against measured Physiological Equivalent Temperature and
+Universal Thermal Climate Index. Four low-cost particulate units built for the
+same programme outperformed the commercial instruments they were checked against.
+
+## Why it still matters to me
+
+This was the first time a microclimate model I built was answerable to an
+outcome measured in people rather than in pascals. Everything since — the
+mesoscale-to-microscale chain, the insistence on a validation record travelling
+with the model — comes from that.

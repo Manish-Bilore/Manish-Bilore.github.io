@@ -1,0 +1,20 @@
+---
+title: "Work"
+listing:
+  id: work
+  contents: projects.yml
+  type: default
+  sort: "date desc"
+  fields: [image, date, title, description, categories]
+  categories: true
+  image-align: left
+  image-height: "260px"
+  sort-ui: false
+  filter-ui: false
+  feed: false
+---
+
+Projects with their own site open in a new tab; the rest are written up here.
+
+::: {#work}
+:::

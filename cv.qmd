@@ -1,0 +1,51 @@
+---
+title: "CV"
+---
+
+[Download PDF](files/ManishBilore-CV.pdf){.btn .btn-outline-secondary}
+
+## Experience
+
+**Program Associate** — International Forum for Environment, Sustainability &
+Technology (iFOREST), Delhi · Jul 2025 –
+
+Compiled and ran WRF from scratch on cloud HPC for two Indian cities, reaching
+3.25 K RMSE on 2 m air temperature. Built the Digital Urban Climate Twin chain
+(WRF → PALM-4U → CEA) for testing heat-island interventions, with PALM-4U static
+driver generation automated. Automated WUDAPT training-area generation from urban
+morphometry, giving LCZ maps at 75–80% accuracy, and benchmarked XGBoost against
+a CNN on identical inputs to attribute per-class performance.
+
+**Research Assistant** — Royal Danish Academy, Copenhagen · Aug 2021 – Dec 2022
+
+Developed and remotely monitored four low-cost IoT particulate sensors that
+outperformed commercial units, including a six-month deployment in Tanzania.
+Built RANS CFD models in OpenFOAM and ANSYS Fluent for architectural wind flow,
+validated against measured PET and UTCI in experimental solar homes.
+
+**Project Manager** — Fairfest Media, Mumbai · Jun 2018 – Jul 2019
+
+Led a multi-city team producing urban-sector insight for partners; market
+segmentation and financial modelling for trade-show positioning.
+
+## Education
+
+**M.Tech Geoinformatics** — CSRE, IIT Bombay · 2023–2025
+**MA Computation in Architecture** — CITA, Royal Danish Academy, Copenhagen · 2019–2021
+**B.Arch** — KRVIA, University of Mumbai · 2012–2017
+
+## Selected projects
+
+See [Work](projects.qmd). Also: policy-intelligence decision support for spatial
+governance (2025–), flood segmentation with Attention U-Net on Sentinel-1/2
+in GEE (F1 0.823), and game-engine acoustic modelling for urban digital twins.
+
+## Skills
+
+**Urban climate** WRF · PALM-4U (LES) · CEA · ENVI-met · WUDAPT/LCZ
+**Simulation** OpenFOAM · ANSYS Fluent · RANS/CFD · Unity
+**GIS & RS** QGIS · ArcGIS · PostGIS · Google Earth Engine · SNAP/PSInSAR
+**Computing** Python · R · SQL · C/C++ · Linux · cloud HPC
+**GeoAI** XGBoost · CNN · Attention U-Net · SHAP
+**Semantics** OWL · RDF · Protégé · ontology design · Neo4j
+**Languages** English · Hindi · Marathi

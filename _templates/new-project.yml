@@ -1,0 +1,12 @@
+# Copy this block into projects.yml, above or below the others. Order in the
+# file does not matter — `sort: "date desc"` on the listing decides.
+- title: ""
+  path: ""              # https://... for a project with its own site,
+                        # or projects/slug.qmd for one written up here
+  date: "YYYY-MM-DD"
+  description: >
+    Two or three sentences. What the thing answers, the chain that produces the
+    answer, and one number that shows it works.
+  image: ""             # images/slug.jpg, or a URL from the project's own site
+  image-alt: ""
+  categories: []

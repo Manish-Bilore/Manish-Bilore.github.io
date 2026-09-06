@@ -1,0 +1,44 @@
+---
+title: "Synthetic geospatial urban data"
+subtitle: "Trip generation for Bandra, Mumbai, where the real data does not exist"
+date: "2024-11-01"
+categories: [synthetic data, mobility, random forest, spatial statistics, R]
+---
+
+::: {.project-links}
+[Repository](https://github.com/Manish-Bilore/SOM-787_Synthetic_Geospatial_Urban_Data){.btn .btn-primary}
+:::
+
+Granular mobility data for Indian cities is either unavailable or personal
+enough that releasing it is not an option. Synthetic data is a way through:
+reproduce the statistical structure of the real thing without reproducing
+anyone in it, and get a sandbox for scenarios that no observed dataset can
+answer.
+
+## Three scripts
+
+**Population.** Builds a synthetic population for Bandra carrying the
+demographic and socio-economic structure of the ward, from points of interest
+and a boundary shapefile.
+
+**Mobility.** Simulates trips probabilistically against land use, transit
+availability and behavioural assumptions; trip points are generated through a
+kernel density surface rather than uniformly, so origins concentrate where
+activity concentrates.
+
+**Evaluation.** Calibrates the output by comparing aggregate metrics with the
+limited real data that is available, then models demand per hexagon with a
+random forest and tests the result for spatial structure with local Moran's I.
+
+![Local Moran's I clusters of predicted demand across the hexagon grid. Whether
+the synthetic surface clusters at all, and where, is the check on whether the
+generator reproduced spatial structure or only marginal
+distributions](../images/som787-morans.png)
+
+## Limitations
+
+Synthetic data inherits its assumptions and hides them well. The population is
+representative in aggregate and fictitious individually, so results hold at the
+scale of the calibration and not below it. The calibration itself is only as
+good as the sparse observations it is fitted against, which is the same data
+scarcity the method was built to work around.

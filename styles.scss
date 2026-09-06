@@ -1,0 +1,145 @@
+/*-- scss:defaults --*/
+
+// Palette: paper white, warm ink, one deep-teal accent. No gradients, no tints.
+$white:        #ffffff;
+$body-bg:      #ffffff;
+$body-color:   #1b1c1d;
+$gray-500:     #6b7076;   // muted metadata
+$gray-200:     #e4e6e5;   // hairlines
+$primary:      #17564f;   // accent — links, category chips
+
+$font-family-sans-serif: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+$font-family-serif:      "Source Serif 4", Georgia, "Times New Roman", serif;
+
+$font-size-root:  17px;
+$line-height-base: 1.6;
+$headings-font-family: $font-family-serif;
+$headings-font-weight: 600;
+
+$link-color: $primary;
+$link-decoration: none;
+$link-hover-decoration: underline;
+
+$navbar-bg: $white;
+$navbar-fg: $body-color;
+$navbar-hl: $primary;
+
+$border-color: $gray-200;
+
+/*-- scss:rules --*/
+
+body {
+  font-family: $font-family-serif;
+  font-size: 1rem;
+  color: $body-color;
+  -webkit-font-smoothing: antialiased;
+}
+
+// Nav, footer, metadata and other chrome in the sans face, so the reading
+// column is unambiguously the content.
+.navbar, .nav-footer, .quarto-listing .listing-date,
+.quarto-category, .btn, .quarto-title-meta {
+  font-family: $font-family-sans-serif;
+}
+
+.navbar {
+  border-bottom: 1px solid $border-color;
+  font-size: 0.9rem;
+  .navbar-brand { font-family: $font-family-serif; font-weight: 600; font-size: 1.05rem; }
+}
+
+.nav-footer {
+  border-top: 1px solid $border-color;
+  font-size: 0.82rem;
+  color: $gray-500;
+  a { color: $gray-500; }
+}
+
+h1, h2, h3 { letter-spacing: -0.01em; }
+h1.title { font-size: 1.9rem; margin-bottom: 1.2rem; }
+h2 {
+  font-size: 1.25rem;
+  margin-top: 2.4rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid $border-color;   // the rule marks a section break, nothing else
+}
+
+// Lede paragraph on the home page.
+.lede {
+  font-size: 1.16rem;
+  line-height: 1.55;
+  max-width: 34em;
+  margin-bottom: 1.8rem;
+}
+
+// ---- Listing -------------------------------------------------------------
+.quarto-listing { margin-top: 0.5rem; }
+
+.quarto-post {
+  border-bottom: 1px solid $border-color;
+  padding: 2rem 0;
+  gap: 1.8rem;
+
+  // Figures here range from a wide viewer screenshot to a portrait network map.
+  // `contain` shows each one whole rather than cropping into it; the thumbnail
+  // column is wide enough that neither shape looks starved.
+  .thumbnail {
+    flex: 0 0 44%;
+    max-width: 44%;
+  }
+  .thumbnail img {
+    width: 100%;
+    border: 1px solid $border-color;
+    object-fit: contain;
+    background: $white;
+  }
+  .listing-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    a { color: $body-color; }
+    a:hover { color: $primary; text-decoration: none; }
+  }
+  .listing-description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: lighten($body-color, 18%);
+  }
+  .listing-date { color: $gray-500; font-size: 0.8rem; }
+}
+
+// Category chips: outlined, not filled — they are labels, not buttons.
+.quarto-category {
+  font-size: 0.72rem;
+  border: 1px solid $border-color;
+  border-radius: 2px;
+  padding: 0.08rem 0.4rem;
+  background: none;
+  color: $gray-500;
+  opacity: 1;
+}
+
+// ---- Project pages -------------------------------------------------------
+.project-links {
+  margin: 1.4rem 0 2rem;
+  .btn { border-radius: 2px; font-size: 0.85rem; padding: 0.4rem 0.9rem; }
+}
+
+// Key-number strip for a project's headline results.
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.2rem;
+  margin: 1.6rem 0 2rem;
+  font-family: $font-family-sans-serif;
+  .n { font-size: 1.5rem; font-weight: 500; line-height: 1.1; }
+  .l { font-size: 0.78rem; color: $gray-500; }
+}
+
+@media (max-width: 700px) {
+  .quarto-post {
+    flex-direction: column;
+    .thumbnail, .thumbnail img { flex: none; max-width: 100%; }
+  }
+  .facts { gap: 1.4rem; }
+}

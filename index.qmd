@@ -1,0 +1,49 @@
+---
+pagetitle: "Manish Bilore"
+listing:
+  id: recent
+  contents: projects.yml
+  type: default
+  sort: "date desc"
+  max-items: 2
+  fields: [image, title, description]
+  image-align: left
+  image-height: "180px"
+  sort-ui: false
+  filter-ui: false
+  feed: false
+---
+
+::: {.lede}
+I am an architect who moved into urban climate modelling through computational
+fluid dynamics. Architectural practice takes a great deal for granted, and the
+assumptions buried in its comfort models are what I have been chasing upward in
+scale ever since — from a room, to a building, to a city.
+:::
+
+I build the mesoscale-to-microscale chain at [iFOREST](https://iforest.global/)
+in Delhi: WRF compiled and run from scratch on cloud HPC for two Indian cities,
+driving PALM-4U for interventions in the existing urban fabric and City Energy
+Analyst for building energy response. Before that, an M.Tech in Geoinformatics
+at CSRE, IIT Bombay, and CFD and low-cost particulate sensing at the Royal
+Danish Academy, Copenhagen.
+
+What holds these together is validation. A microclimate model becomes a claim
+about people the moment anyone acts on it, so the work I keep is the work that
+carries its own error record — station comparisons, per-class classifier
+attribution, and a statement of where the method fails. One current thread is
+documenting where the 2012 Local Climate Zone typology does not describe the
+urban form of Indian cities.
+
+## Recent work
+
+::: {#recent}
+:::
+
+[All work →](projects.qmd)
+
+## Contact
+
+[manish.bilore@gmail.com](mailto:manish.bilore@gmail.com) ·
+[GitHub](https://github.com/Manish-Bilore) ·
+[CV](cv.qmd)

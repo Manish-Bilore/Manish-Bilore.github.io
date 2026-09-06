@@ -1,0 +1,4 @@
+# Applies to every page in projects/
+toc: true
+toc-depth: 2
+title-block-banner: false
