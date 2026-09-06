@@ -89,12 +89,25 @@ p.subtitle, .quarto-title .subtitle { font-size: $fs-subtitle; color: $gray-500;
   a { color: $primary; font-weight: 500; }
 }
 
-// Lede paragraph on the home page.
+// Opening paragraph. Same family and size as the body; weight alone separates
+// it, so the first screen has one text size rather than two.
 .lede {
-  font-size: $fs-subtitle;
-  line-height: 1.55;
-  max-width: 34em;
-  margin-bottom: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+}
+
+// Justified body copy, with hyphenation so the extra word spacing does not open
+// rivers. Scoped to running prose: headings, captions, lists, cards and the
+// hero cue stay ranged left, where a ragged edge reads better.
+main p {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+main .hero-cue, main figcaption, main .figure-caption,
+main .p-card p, main .facts p, main .quarto-listing p {
+  text-align: left;
+  hyphens: manual;
 }
 
 // ---- Home-page project entries ------------------------------------------

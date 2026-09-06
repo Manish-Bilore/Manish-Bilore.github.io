@@ -13,17 +13,14 @@ loads on click.
 :::
 
 ::: {.lede}
-I build simulations of Indian cities, of air, heat, and water; and the records
-that show how closely those simulations correspond to what was actually measured.
+I build simulations of Indian cities, of air, heat and water, and the records
+that show how closely those simulations match what was actually measured.
 :::
 
 Architecture, then computation, then geoinformatics: a room, a building, a city.
-
 I am a Program Associate at [iFOREST](https://iforest.global/) in Delhi, working
 across the WRF to PALM-4U to CEA chain for Digital Urban Climate Twins for Indian
-cities.
-
-I hold an M.Tech in Geoinformatics from CSRE, IIT Bombay, and an MA in
+cities. I hold an M.Tech in Geoinformatics from CSRE, IIT Bombay, and an MA in
 Computation in Architecture from the Royal Danish Academy, Copenhagen.
 
 A microclimate model becomes a claim about people the moment someone acts on it.
