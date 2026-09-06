@@ -45,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-c4fd17fdf11b6ababb28a747a938e6a2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-192fe3b32bc31598efc1b162523b931c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -75,7 +75,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&amp;family=IBM+Plex+Sans:wght@400;500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
 
 
 <meta property="og:title" content="Surface run-off water mitigation – Manish Bilore">
@@ -117,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/manish-bilore/"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+    <a class="nav-link" href="https://www.linkedin.com/in/manish-b-44212084/"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -228,7 +228,7 @@ catalogued interventions
 <section id="three-tools-in-a-loop" class="level2">
 <h2 data-anchor-id="three-tools-in-a-loop">Three tools in a loop</h2>
 <p><strong>Landscape analysis</strong> derives contour, slope and watershed structure from the site terrain, and reports cut-and-fill volumes for any proposed change, so the earthwork cost of a move is visible while the move is being made.</p>
-<p><strong>Water analysis</strong> runs meshless particle simulation across that terrain — particle flow, speed, and concavity against slope — for two loading cases: rainfall landing on the surface, and water rising through it. The combined run carries 20,000 particles at a Brownian force of 0.5 and drag of 0.1.</p>
+<p><strong>Water analysis</strong> runs meshless particle simulation across that terrain, particle flow, speed, and concavity against slope, for two loading cases: rainfall landing on the surface, and water rising through it. The combined run carries 20,000 particles at a Brownian force of 0.5 and drag of 0.1.</p>
 <p><strong>Program generation</strong> takes the fluid vectors and site context and voxelises a layout: circulation, access and blue–green space allotment placed against where the water actually goes.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -239,8 +239,8 @@ catalogued interventions
 </section>
 <section id="grading-the-interventions" class="level2">
 <h2 data-anchor-id="grading-the-interventions">Grading the interventions</h2>
-<p>The procedural script needs to know what each element is worth before it can place it. So each intervention was simulated twice on the same terrain at the same slope-to-depth ratio — once bare as a control, once with the element in place — and graded on particle velocity and inundation extent.</p>
-<p>Five elements came out of that, each drawn as an assembly of metal geocell, gabion and channel rather than as a shape: a flood-able amphitheatre park, a weir, an open/closed drain channel, an underground tank, and a living retaining wall. Each is meant to read as public amenity on a dry day and as hydraulic infrastructure on a wet one — the amphitheatre holds an everyday, a normal-rainfall and an extreme-rainfall state, and stays a park in all three.</p>
+<p>The procedural script needs to know what each element is worth before it can place it. So each intervention was simulated twice on the same terrain at the same slope-to-depth ratio, once bare as a control, once with the element in place, and graded on particle velocity and inundation extent.</p>
+<p>Five elements came out of that, each drawn as an assembly of metal geocell, gabion and channel rather than as a shape: a flood-able amphitheatre park, a weir, an open/closed drain channel, an underground tank, and a living retaining wall. Each is meant to read as public amenity on a dry day and as hydraulic infrastructure on a wet one, the amphitheatre holds an everyday, a normal-rainfall and an extreme-rainfall state, and stays a park in all three.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../images/runoff/functional-elements.jpg" class="img-fluid figure-img"></p>
@@ -262,7 +262,7 @@ catalogued interventions
 <figcaption>Simulate, read the inundation, place the channel, then let the script place the rest</figcaption>
 </figure>
 </div>
-<p>A separate experiment series swept the parameter space behind that placement: four modification patterns at a 15% slope gradient, under cut and under fill, against two fluid types — 250 particles standing for a flash flood, 1,000 for continuous rainfall — over 500 time frames each. The question was which patterns of landscape change collect water and which merely move it somewhere else.</p>
+<p>A separate experiment series swept the parameter space behind that placement: four modification patterns at a 15% slope gradient, under cut and under fill, against two fluid types (250 particles standing for a flash flood, 1,000 for continuous rainfall) over 500 time frames each. The question was which patterns of landscape change collect water and which merely move it somewhere else.</p>
 <p>Scaled up to Tårnby, the same loop marks the flood-prone blocks, separates the area affected by inundation from the area worth redeveloping, and proposes a porous urban form: integrated wetlands, distributed holding ponds and water channels threaded between new housing.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -275,12 +275,12 @@ catalogued interventions
 <section id="limitations" class="level2">
 <h2 data-anchor-id="limitations">Limitations</h2>
 <p><strong>The particle model is a design instrument, not a hydraulic one.</strong> It is meshless and unvalidated against gauge data. It produces plausible flow structure and relative comparisons between options, not depths or discharges, and nothing here should be read as a design flood.</p>
-<p><strong>No return periods.</strong> “Normal” and “extreme” rainfall are particle counts — 10,000 and 100,000 — not recurrence intervals. Tying those loading cases to Danish design rainfall statistics is the first thing this would need to be operational.</p>
+<p><strong>No return periods.</strong> “Normal” and “extreme” rainfall are particle counts of 10,000 and 100,000, not recurrence intervals. Tying those loading cases to Danish design rainfall statistics is the first thing this would need to be operational.</p>
 <p><strong>Intervention grades are relative and single-site.</strong> Each element is scored against one control terrain at one slope-to-depth ratio, so the grades order the catalogue rather than predict performance elsewhere.</p>
 </section>
 <section id="where-it-went" class="level2">
 <h2 data-anchor-id="where-it-went">Where it went</h2>
-<p>This is the earliest work on this site and the origin of most of what follows. The chain here — terrain, simulation, a control to test against, then intervention — is the one I now run with WRF and PALM-4U instead of particles, over cities instead of blocks, and against station observations instead of a bare-terrain run.</p>
+<p>This is the earliest work on this site and the origin of most of what follows. The chain here, terrain, simulation, a control to test against, then intervention, is the one I now run with WRF and PALM-4U instead of particles, over cities instead of blocks, and against station observations instead of a bare-terrain run.</p>
 
 
 </section>

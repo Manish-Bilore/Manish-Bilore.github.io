@@ -45,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-c4fd17fdf11b6ababb28a747a938e6a2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-192fe3b32bc31598efc1b162523b931c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -75,7 +75,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&amp;family=IBM+Plex+Sans:wght@400;500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
 
 
 <meta property="og:title" content="InSAR time series for urban land subsidence – Manish Bilore">
@@ -117,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/manish-bilore/"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+    <a class="nav-link" href="https://www.linkedin.com/in/manish-b-44212084/"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -189,7 +189,7 @@ ul.task-list li input[type="checkbox"] {
 <p><a href="../files/ManishBilore-MTech-InSAR-subsidence.pdf" class="btn btn-primary">Read the thesis (PDF)</a></p>
 </div>
 <p>M.Tech thesis, Centre of Studies in Resources Engineering, IIT Bombay, supervised by Prof.&nbsp;Y. S. Rao. Submitted June 2025.</p>
-<p>A subsidence map is a processing decision as much as a measurement. Two open-source time-series chains, run on the same Sentinel-1 frame, will not return the same numbers — they build different interferogram networks, correct the atmosphere with different models, and pick their own reference point. This work runs both over Lucknow, quantifies where they part company, and then uses the result to train a susceptibility model for the parts of the city that have no scatterers to measure.</p>
+<p>A subsidence map is a processing decision as much as a measurement. Two open-source time-series chains, run on the same Sentinel-1 frame, will not return the same numbers, they build different interferogram networks, correct the atmosphere with different models, and pick their own reference point. This work runs both over Lucknow, quantifies where they part company, and then uses the result to train a susceptibility model for the parts of the city that have no scatterers to measure.</p>
 <div class="facts">
 <div>
 <div class="n">
@@ -228,7 +228,7 @@ cities mapped
 <h2 data-anchor-id="two-chains-one-frame">Two chains, one frame</h2>
 <p><strong>MintPy on OpenSARLab.</strong> Sentinel-1 IW SLC, VV, processed to interferograms through ASF HyP3 and inverted with the small-baseline workflow on the Alaska Satellite Facility’s cloud JupyterHub. Tropospheric delay corrected with ERA5 reanalysis pulled from the Copernicus Climate Data Store; network optimisation, ramp correction and velocity estimation follow, with the reference pixel placed on stable ground.</p>
 <p><strong>LiCSBAS on LiCSAR.</strong> The same frame, taken from pre-processed COMET-LiCS interferograms, inverted with loop-closure-screened SBAS and corrected with GACOS rather than ERA5, on a 90 m grid.</p>
-<p>A single-pair DInSAR run in SNAP (2024-12-03 / 2024-12-27, 24-day baseline, descending) sits in front of both as a baseline. Its fringes over the urban core are coherent enough to see, and uncorrected enough that the thesis treats it as a qualitative indicator only — which is the argument for time series in the first place.</p>
+<p>A single-pair DInSAR run in SNAP (2024-12-03 / 2024-12-27, 24-day baseline, descending) sits in front of both as a baseline. Its fringes over the urban core are coherent enough to see, and uncorrected enough that the thesis treats it as a qualitative indicator only, which is the argument for time series in the first place.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../images/psinsar/los-velocity.jpg" class="img-fluid figure-img"></p>
@@ -244,7 +244,7 @@ cities mapped
 </section>
 <section id="where-the-two-chains-agree" class="level2">
 <h2 data-anchor-id="where-the-two-chains-agree">Where the two chains agree</h2>
-<p>They agree on <strong>where</strong>. The hotspots are in the same places, and they persist against an independent StaMPS-based study of Lucknow covering 2014–2020 — the zones that were subsiding then are still subsiding now.</p>
+<p>They agree on <strong>where</strong>. The hotspots are in the same places, and they persist against an independent StaMPS-based study of Lucknow covering 2014–2020, the zones that were subsiding then are still subsiding now.</p>
 <p>They disagree on <strong>how much</strong>. Reference points are auto-selected independently and do not coincide, so the two velocity fields carry different offsets. LiCSBAS masks harder and returns a sparser, higher-confidence field; MintPy retains moderate-noise pixels through phase bridging and returns broader coverage. GACOS and ERA5 remove different noise components. For Mumbai, LiCSBAS returned nothing usable at all across the selected frames, so that city rests on one chain only.</p>
 <p>The practical reading: the spatial pattern is robust to the choice of chain, the absolute rate is not. Anything downstream should be built on the pattern.</p>
 <div class="quarto-figure quarto-figure-center">
@@ -284,7 +284,7 @@ cities mapped
 <p><strong>LOS is not vertical.</strong> Every rate here is line-of-sight. Converting to vertical motion assumes horizontal displacement is negligible, which in a groundwater-driven setting is defensible and still an assumption.</p>
 <p><strong>Everything is relative to a reference pixel.</strong> Both chains measure deformation against a point assumed stable. If that point moves, the whole field shifts with it.</p>
 <p><strong>The susceptibility surface is an interpolated model output, not an observation.</strong> Kriging an XGBoost probability produces something smooth and readable that no instrument ever measured. It should be read as a ranking of relative susceptibility.</p>
-<p><strong>Land cover dominates the model.</strong> In the gain decomposition, the land-cover predictor carries the large majority of the model’s explanatory weight, with slope a distant second. That is close to saying the classifier has learnt where the built-up area is — which is also where the labels come from, since scatterers are concentrated there. Breaking that circularity needs predictors the InSAR product does not already encode: groundwater levels, soil profile, subsurface geology.</p>
+<p><strong>Land cover dominates the model.</strong> In the gain decomposition, the land-cover predictor carries the large majority of the model’s explanatory weight, with slope a distant second. That is close to saying the classifier has learnt where the built-up area is, which is also where the labels come from, since scatterers are concentrated there. Breaking that circularity needs predictors the InSAR product does not already encode: groundwater levels, soil profile, subsurface geology.</p>
 
 
 </section>

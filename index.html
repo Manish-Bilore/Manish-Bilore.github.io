@@ -36,8 +36,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -46,7 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c4fd17fdf11b6ababb28a747a938e6a2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-192fe3b32bc31598efc1b162523b931c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,68 +72,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-recent .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-recent'] = new List('listing-recent', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&amp;family=IBM+Plex+Sans:wght@400;500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <meta property="og:title" content="Manish Bilore">
 <meta property="og:description" content="Urban climate modelling, remote sensing and GeoAI for Indian cities.">
@@ -176,7 +116,7 @@ window.Quarto = {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/manish-bilore/"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+    <a class="nav-link" href="https://www.linkedin.com/in/manish-b-44212084/"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -211,65 +151,37 @@ window.Quarto = {
 </figure>
 </div>
 <div class="hero-cue">
-<p><a href="https://manish-bilore.github.io/urban-climate/">Open the Nagpur viewer →</a> 859,488 buildings, the LCZ map and 96 h of WRF fields, in the browser. About 90 MB, so it loads on click.</p>
+<p><a href="https://manish-bilore.github.io/urban-climate/">Open the Nagpur viewer</a> 859,488 buildings, the LCZ map and 96 h of WRF fields, in the browser. About 90 MB, so it loads on click.</p>
 </div>
 </div>
 <div class="lede">
-<p>I build simulations of Indian cities — air, heat, water — and the records that say how far each one sits from what was actually measured.</p>
+<p>I build simulations of Indian cities, air and heat and water, plus the records that say how far each one sits from what was actually measured.</p>
 </div>
-<p>Architecture, then computation, then geoinformatics: a room, a building, a city. Program Associate at <a href="https://iforest.global/">iFOREST</a> in Delhi, running the WRF → PALM-4U → CEA chain for Nagpur. M.Tech Geoinformatics, CSRE, IIT Bombay; MA Computation in Architecture, Royal Danish Academy, Copenhagen.</p>
-<p>A microclimate model becomes a claim about people the moment anyone acts on it. So each project here carries its own error record — what was compared, against what, and where the method fails.</p>
+<p>Architecture, then computation, then geoinformatics: a room, a building, a city. Program Associate at <a href="https://iforest.global/">iFOREST</a> in Delhi, running the WRF, PALM-4U and CEA chain for Nagpur. M.Tech Geoinformatics, CSRE, IIT Bombay; MA Computation in Architecture, Royal Danish Academy, Copenhagen.</p>
+<p>A microclimate model becomes a claim about people the moment anyone acts on it. So each project here carries its own error record: what was compared, against what, and where the method fails.</p>
 <section id="recent-work" class="level2">
 <h2 data-anchor-id="recent-work">Recent work</h2>
-<div id="listing-recent" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-left" data-index="0" data-categories="dXJiYW4lMjBjbGltYXRlJTJDV1JGJTJDUEFMTS00VSUyQ0xDWiUyQ3ZhbGlkYXRpb24=" data-listing-date-sort="1788220800000">
-<div class="thumbnail"><a href="https://manish-bilore.github.io/nagpur-duct-site/" class="no-external">
-
-<img loading="lazy" src="images/nagpur-viewer.jpg" class="thumbnail-image" style="height: 180px;" alt="3D buildings under a WRF air-temperature field, station validation panel open">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="https://manish-bilore.github.io/nagpur-duct-site/" class="no-external">Nagpur Digital Urban Climate Twin</a>
-</h3>
-<div class="delink listing-description"><a href="https://manish-bilore.github.io/nagpur-duct-site/" class="no-external">
-<p>860,000 building footprints and 96 hours of WRF fields, in the browser. WRF-ARW on 7.5/1.5/0.3 km nests drives PALM-4U at 10 m and a CEA stock model for cooling demand; the site is the validation record — 2 m air temperature against station observation, and what each configuration change actually bought.</p>
-</a></div>
+<div class="project-list">
+<ul>
+<li><a href="https://manish-bilore.github.io/nagpur-duct-site/"><strong>Nagpur Digital Urban Climate Twin</strong></a>
+<ul>
+<li>859,488 building footprints and 96 hours of WRF fields, in the browser</li>
+<li>WRF-ARW on 7.5/1.5/0.3 km nests, PALM-4U at 10 m, CEA stock model for cooling demand</li>
+<li><a href="https://manish-bilore.github.io/nagpur-duct-site/validation.html">The validation record</a>: 2 m air temperature against station observation, and what each configuration change bought</li>
+</ul></li>
+<li><a href="https://manish-bilore.github.io/wdn-digital-twin/"><strong>Ontology-driven water distribution twin</strong></a>
+<ul>
+<li>An IIT Bombay campus network, from an estate-office CAD drawing to a graph you can question</li>
+<li>322 pipes, 18.8 km of main, 29 monitoring nodes, 8,554 triples</li>
+<li>EPANET 2.2 hydraulics, K-means district metering, OWL 2 DL ontology, SPARQL running client-side</li>
+</ul></li>
+</ul>
 </div>
-<div class="metadata">
-<a href="https://manish-bilore.github.io/nagpur-duct-site/" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="1" data-categories="ZGlnaXRhbCUyMHR3aW4lMkNFUEFORVQlMkNvbnRvbG9neSUyQ1NQQVJRTCUyQ0lvVA==" data-listing-date-sort="1787184000000">
-<div class="thumbnail"><a href="https://manish-bilore.github.io/wdn-digital-twin/" class="no-external">
-
-<img loading="lazy" src="images/wdn-sensors.png" class="thumbnail-image" style="height: 180px;" alt="Campus water network with 29 monitoring nodes across five district metered areas">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="https://manish-bilore.github.io/wdn-digital-twin/" class="no-external">Ontology-driven water distribution twin</a>
-</h3>
-<div class="delink listing-description"><a href="https://manish-bilore.github.io/wdn-digital-twin/" class="no-external">
-<p>An IIT Bombay campus network from an estate-office CAD drawing to a graph you can question: 322 pipes, 18.8 km of main, 29 monitoring nodes, 8,554 triples. EPANET 2.2 hydraulics, K-means district metering and an OWL 2 DL ontology, with SPARQL running client-side in the reader’s browser.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="https://manish-bilore.github.io/wdn-digital-twin/" class="no-external">
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-<p><a href="./projects.html">All work →</a></p>
+<p><a href="./projects.html">All work</a></p>
 </section>
 <section id="contact" class="level2">
 <h2 data-anchor-id="contact">Contact</h2>
-<p><a href="mailto:manish.bilore@gmail.com">manish.bilore@gmail.com</a> · <a href="https://github.com/Manish-Bilore">GitHub</a> · <a href="./cv.html">CV</a></p>
-
+<p><a href="mailto:manish.bilore@gmail.com">manish.bilore@gmail.com</a> · <a href="https://github.com/Manish-Bilore">GitHub</a> · <a href="https://www.linkedin.com/in/manish-b-44212084/">LinkedIn</a> · <a href="./cv.html">CV</a></p>
 
 
 </section>

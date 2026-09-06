@@ -1,15 +1,5 @@
 [
   {
-    "listing": "/index.html",
-    "items": [
-      "/projects/insar-subsidence.html",
-      "/projects/landslide-fuzzy-inference.html",
-      "/projects/synthetic-urban-data.html",
-      "/projects/tanzania-ventilation.html",
-      "/projects/surface-runoff-mitigation.html"
-    ]
-  },
-  {
     "listing": "/projects.html",
     "items": [
       "/projects/insar-subsidence.html",
