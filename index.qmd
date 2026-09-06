@@ -26,6 +26,19 @@ A microclimate model becomes a claim about people the moment anyone acts on it.
 So each project here carries its own error record: what was compared, against
 what, and where the method fails.
 
+## What I work on
+
+- **Urban climate simulation:** WRF, PALM-4U large-eddy simulation, urban canopy schemes, LCZ mapping, heat-risk analysis
+- **Geospatial computation:** large-scale building footprints, GIS pipelines, spatial databases, satellite time series
+- **Digital twins:** coupled simulation, 3D city models, infrastructure networks, browser-based visualisation
+- **Semantic infrastructure:** ontology design, knowledge graphs, SPARQL, interoperability across data sources
+- **Computational design:** parametric modelling, CFD, environmental analysis, architecture
+
+::: {.availability}
+Looking for a PhD position in urban climate or boundary-layer meteorology, and
+open to research roles in climate modelling and geospatial engineering.
+:::
+
 ## Recent work
 
 ::: {.p-card}
