@@ -97,15 +97,6 @@ p.subtitle, .quarto-title .subtitle { font-size: $fs-subtitle; color: $gray-500;
   margin-bottom: 1.8rem;
 }
 
-// One line, set apart by a rule rather than a badge. Editable or deletable in
-// index.qmd without touching anything else.
-.availability {
-  border-left: 2px solid $primary;
-  padding: 0.15rem 0 0.15rem 0.9rem;
-  margin: 1.6rem 0 0;
-  color: lighten($body-color, 18%);
-}
-
 // ---- Home-page project entries ------------------------------------------
 // Thumbnail beside a bulleted summary: enough to see what the thing is, short
 // enough to scan. The Work page carries the full descriptions.
