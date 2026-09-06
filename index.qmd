@@ -28,16 +28,30 @@ what, and where the method fails.
 
 ## Recent work
 
-::: {.project-list}
-- [**Nagpur Digital Urban Climate Twin**](https://manish-bilore.github.io/nagpur-duct-site/)
-  - 859,488 building footprints and 96 hours of WRF fields, in the browser
-  - WRF-ARW on 7.5/1.5/0.3 km nests, PALM-4U at 10 m, CEA stock model for cooling demand
-  - [The validation record](https://manish-bilore.github.io/nagpur-duct-site/validation.html): 2 m air temperature against station observation, and what each configuration change bought
+::: {.p-card}
+::: {.p-thumb}
+[![Nagpur viewer: 3D buildings under a WRF air-temperature field](images/nagpur-viewer.jpg)](https://manish-bilore.github.io/nagpur-duct-site/)
+:::
+::: {.p-body}
+[**Nagpur Digital Urban Climate Twin**](https://manish-bilore.github.io/nagpur-duct-site/){.p-name}
 
-- [**Ontology-driven water distribution twin**](https://manish-bilore.github.io/wdn-digital-twin/)
-  - An IIT Bombay campus network, from an estate-office CAD drawing to a graph you can question
-  - 322 pipes, 18.8 km of main, 29 monitoring nodes, 8,554 triples
-  - EPANET 2.2 hydraulics, K-means district metering, OWL 2 DL ontology, SPARQL running client-side
+- 859,488 building footprints and 96 hours of WRF fields, in the browser
+- WRF-ARW on 7.5/1.5/0.3 km nests, PALM-4U at 10 m, CEA stock model for cooling demand
+- [The validation record](https://manish-bilore.github.io/nagpur-duct-site/validation.html): 2 m air temperature against station observation, and what each configuration change bought
+:::
+:::
+
+::: {.p-card}
+::: {.p-thumb}
+[![Campus water network with 29 monitoring nodes across five district metered areas](images/wdn-sensors.png)](https://manish-bilore.github.io/wdn-digital-twin/)
+:::
+::: {.p-body}
+[**Ontology-driven water distribution twin**](https://manish-bilore.github.io/wdn-digital-twin/){.p-name}
+
+- An IIT Bombay campus network, from an estate-office CAD drawing to a graph you can question
+- 322 pipes, 18.8 km of main, 29 monitoring nodes, 8,554 triples
+- EPANET 2.2 hydraulics, K-means district metering, OWL 2 DL ontology, SPARQL running client-side
+:::
 :::
 
 [All work](projects.qmd)

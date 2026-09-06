@@ -16,6 +16,12 @@ Quarto site. Landing page, a listing of work, a CV page. Nothing else.
 Edit its block in `projects.yml`. Bump `date:` if you want it to move back to
 the top of the list.
 
+## The CV PDF
+
+`cv.qmd` links to `files/ManishBilore-CV.pdf`. That exact path and filename, or
+the Download button 404s. Replace the file to update the download; nothing else
+needs changing.
+
 ## Large files
 
 `files/ManishBilore-MTech-InSAR-subsidence.pdf` is ~19 MB. Fine to commit once;

@@ -2,6 +2,8 @@
 title: "CV"
 ---
 
+[Download PDF](files/ManishBilore-CV.pdf){.btn .btn-outline-secondary}
+
 ## Experience
 
 **Program Associate**, iFOREST (International Forum for Environment,

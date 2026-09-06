@@ -6,15 +6,25 @@ $body-bg:      #ffffff;
 $body-color:   #1b1c1d;
 $gray-500:     #6b7076;   // muted metadata
 $gray-200:     #e4e6e5;   // hairlines
-$primary:      #17564f;   // accent — links, category chips
+$primary:      #17564f;   // accent: links, category chips
 
 // One family everywhere.
 $font-family-sans-serif: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 $font-family-serif:      $font-family-sans-serif;
 
-$font-size-root:  16.5px;
+// FOUR SIZES. Nothing on this site sets a font-size outside these.
+//   title     page headings
+//   subtitle  section headings, project names, the home-page lede
+//   body      everything you read
+//   note      metadata, captions, chips, buttons, navbar, footer
+$fs-title:    1.75rem;
+$fs-subtitle: 1.15rem;
+$fs-body:     1rem;
+$fs-note:     0.82rem;
+
+$font-size-root:   16.5px;
 $line-height-base: 1.6;
-$headings-font-family: $font-family-serif;
+$headings-font-family: $font-family-sans-serif;
 $headings-font-weight: 500;
 
 $link-color: $primary;
@@ -31,45 +41,39 @@ $border-color: $gray-200;
 
 body {
   font-family: $font-family-sans-serif;
-  font-size: 1rem;
+  font-size: $fs-body;
   color: $body-color;
   -webkit-font-smoothing: antialiased;
 }
 
-// Nav, footer, metadata and other chrome in the sans face, so the reading
-// column is unambiguously the content.
-// Weight, not family, marks the difference between chrome and content.
-.navbar, .nav-footer, .quarto-listing .listing-date,
-.quarto-category, .btn, .quarto-title-meta {
-  font-family: $font-family-sans-serif;
-}
-
 .navbar {
   border-bottom: 1px solid $border-color;
-  font-size: 0.9rem;
-  .navbar-brand { font-weight: 500; font-size: 1.05rem; letter-spacing: 0.01em; }
+  font-size: $fs-note;
+  .navbar-brand { font-size: $fs-subtitle; font-weight: 500; letter-spacing: 0.01em; }
 }
 
 .nav-footer {
   border-top: 1px solid $border-color;
-  font-size: 0.82rem;
+  font-size: $fs-note;
   color: $gray-500;
   a { color: $gray-500; }
 }
 
 h1, h2, h3 { letter-spacing: -0.01em; }
-h1.title { font-size: 1.9rem; margin-bottom: 1.2rem; }
+h1, h1.title { font-size: $fs-title; margin-bottom: 1.2rem; }
 h2 {
-  font-size: 1.25rem;
+  font-size: $fs-subtitle;
   margin-top: 2.4rem;
   padding-bottom: 0.35rem;
   border-bottom: 1px solid $border-color;   // the rule marks a section break, nothing else
 }
+h3 { font-size: $fs-subtitle; }
+p.subtitle, .quarto-title .subtitle { font-size: $fs-subtitle; color: $gray-500; }
 
 // Home-page hero. The subject of this site is visual; the first thing on the
 // page should be an output, not a sentence about outputs.
 .hero {
-  margin: 0 0 2.2rem;
+  margin: 0 0 0.5rem;
   img {
     width: 100%;
     border: 1px solid $border-color;
@@ -79,8 +83,7 @@ h2 {
 }
 
 .hero-cue {
-  font-family: $font-family-sans-serif;
-  font-size: 0.82rem;
+  font-size: $fs-note;
   color: $gray-500;
   margin: 0.55rem 0 2.2rem;
   a { color: $primary; font-weight: 500; }
@@ -88,13 +91,54 @@ h2 {
 
 // Lede paragraph on the home page.
 .lede {
-  font-size: 1.16rem;
+  font-size: $fs-subtitle;
   line-height: 1.55;
   max-width: 34em;
   margin-bottom: 1.8rem;
 }
 
-// ---- Listing -------------------------------------------------------------
+// ---- Home-page project entries ------------------------------------------
+// Thumbnail beside a bulleted summary: enough to see what the thing is, short
+// enough to scan. The Work page carries the full descriptions.
+.p-card {
+  display: flex;
+  gap: 1.6rem;
+  align-items: flex-start;
+  padding: 1.6rem 0;
+  border-bottom: 1px solid $border-color;
+
+  .p-thumb {
+    flex: 0 0 38%;
+    max-width: 38%;
+    img {
+      width: 100%;
+      border: 1px solid $border-color;
+      background: $white;
+      display: block;
+    }
+    p { margin: 0; }
+  }
+
+  .p-body {
+    flex: 1;
+    // Quarto renders `[**Title**](url){.p-name}` as <a class="p-name">, so the
+    // rule has to work on the anchor itself, not only on a wrapper.
+    a.p-name, .p-name {
+      font-size: $fs-subtitle;
+      font-weight: 500;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+      color: $body-color;
+      &:hover { color: $primary; text-decoration: none; }
+      a { color: $body-color; }
+    }
+    > p:first-child { margin-bottom: 0.5rem; }
+    ul { padding-left: 1.05rem; margin: 0; }
+    li { margin-bottom: 0.3rem; }
+  }
+}
+
+// ---- Listing (Work page) -------------------------------------------------
 .quarto-listing { margin-top: 0.5rem; }
 
 .quarto-post {
@@ -102,9 +146,8 @@ h2 {
   padding: 2rem 0;
   gap: 1.8rem;
 
-  // Figures here range from a wide viewer screenshot to a portrait network map.
-  // `contain` shows each one whole rather than cropping into it; the thumbnail
-  // column is wide enough that neither shape looks starved.
+  // Figures range from a wide viewer screenshot to a portrait network map.
+  // `contain` shows each one whole rather than cropping into it.
   .thumbnail {
     flex: 0 0 44%;
     max-width: 44%;
@@ -116,23 +159,23 @@ h2 {
     background: $white;
   }
   .listing-title {
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: $fs-subtitle;
+    font-weight: 500;
     margin-bottom: 0.3rem;
     a { color: $body-color; }
     a:hover { color: $primary; text-decoration: none; }
   }
   .listing-description {
-    font-size: 0.95rem;
+    font-size: $fs-body;
     line-height: 1.5;
     color: lighten($body-color, 18%);
   }
-  .listing-date { color: $gray-500; font-size: 0.8rem; }
+  .listing-date { color: $gray-500; font-size: $fs-note; }
 }
 
-// Category chips: outlined, not filled — they are labels, not buttons.
+// Category chips: outlined, not filled. They are labels, not buttons.
 .quarto-category {
-  font-size: 0.72rem;
+  font-size: $fs-note;
   border: 1px solid $border-color;
   border-radius: 2px;
   padding: 0.08rem 0.4rem;
@@ -144,7 +187,7 @@ h2 {
 // ---- Project pages -------------------------------------------------------
 .project-links {
   margin: 1.4rem 0 2rem;
-  .btn { border-radius: 2px; font-size: 0.85rem; padding: 0.4rem 0.9rem; }
+  .btn { border-radius: 2px; font-size: $fs-note; padding: 0.4rem 0.9rem; }
 }
 
 // Key-number strip for a project's headline results.
@@ -153,24 +196,20 @@ h2 {
   flex-wrap: wrap;
   gap: 2.2rem;
   margin: 1.6rem 0 2rem;
-  font-family: $font-family-sans-serif;
-  .n { font-size: 1.5rem; font-weight: 500; line-height: 1.1; }
-  .l { font-size: 0.78rem; color: $gray-500; }
+  .n { font-size: $fs-subtitle; font-weight: 500; line-height: 1.1; }
+  .l { font-size: $fs-note; color: $gray-500; }
 }
+
+figcaption, .figure-caption { font-size: $fs-note; color: $gray-500; }
 
 @media (max-width: 700px) {
   .quarto-post {
     flex-direction: column;
     .thumbnail, .thumbnail img { flex: none; max-width: 100%; }
   }
+  .p-card {
+    flex-direction: column;
+    .p-thumb { flex: none; max-width: 100%; }
+  }
   .facts { gap: 1.4rem; }
-}
-
-// Home-page project list. Bulleted rather than carded: the Work page carries
-// the thumbnails, so this stays a scannable index.
-.project-list {
-  padding-left: 1.1rem;
-  li { margin-bottom: 1.1rem; }
-  .p-name { font-weight: 500; }
-  .p-note { color: lighten($body-color, 22%); font-size: 0.95rem; }
 }
