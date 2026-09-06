@@ -38,7 +38,7 @@ the method performed, and where it fails.
 
 ## Research interests
 
-I am looking for a PhD position in urban climate or boundary-layer meteorology,
+I am looking for a position in urban climate or boundary-layer meteorology,
 and am open to research roles in climate modelling, urban environmental
 simulation, and geospatial engineering.
 
