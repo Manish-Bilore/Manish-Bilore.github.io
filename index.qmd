@@ -1,52 +1,50 @@
 ---
 pagetitle: "Manish Bilore"
-listing:
-  id: recent
-  contents: projects.yml
-  type: default
-  sort: "date desc"
-  max-items: 2
-  fields: [image, title, description]
-  image-align: left
-  image-height: "180px"
-  sort-ui: false
-  filter-ui: false
-  feed: false
 ---
 
 ::: {.hero}
 [![Nagpur: 859,488 building footprints under a WRF 2 m air-temperature field, with the station validation panel open](images/nagpur-viewer.jpg)](https://manish-bilore.github.io/urban-climate/)
 
 ::: {.hero-cue}
-[Open the Nagpur viewer →](https://manish-bilore.github.io/urban-climate/) 859,488
+[Open the Nagpur viewer](https://manish-bilore.github.io/urban-climate/) 859,488
 buildings, the LCZ map and 96 h of WRF fields, in the browser. About 90 MB, so it
 loads on click.
 :::
 :::
 
 ::: {.lede}
-I build simulations of Indian cities — air, heat, water — and the records that
-say how far each one sits from what was actually measured.
+I build simulations of Indian cities, air and heat and water, plus the records
+that say how far each one sits from what was actually measured.
 :::
 
 Architecture, then computation, then geoinformatics: a room, a building, a city.
 Program Associate at [iFOREST](https://iforest.global/) in Delhi, running the
-WRF → PALM-4U → CEA chain for Nagpur. M.Tech Geoinformatics, CSRE, IIT Bombay;
+WRF, PALM-4U and CEA chain for Nagpur. M.Tech Geoinformatics, CSRE, IIT Bombay;
 MA Computation in Architecture, Royal Danish Academy, Copenhagen.
 
 A microclimate model becomes a claim about people the moment anyone acts on it.
-So each project here carries its own error record — what was compared, against
+So each project here carries its own error record: what was compared, against
 what, and where the method fails.
 
 ## Recent work
 
-::: {#recent}
+::: {.project-list}
+- [**Nagpur Digital Urban Climate Twin**](https://manish-bilore.github.io/nagpur-duct-site/)
+  - 859,488 building footprints and 96 hours of WRF fields, in the browser
+  - WRF-ARW on 7.5/1.5/0.3 km nests, PALM-4U at 10 m, CEA stock model for cooling demand
+  - [The validation record](https://manish-bilore.github.io/nagpur-duct-site/validation.html): 2 m air temperature against station observation, and what each configuration change bought
+
+- [**Ontology-driven water distribution twin**](https://manish-bilore.github.io/wdn-digital-twin/)
+  - An IIT Bombay campus network, from an estate-office CAD drawing to a graph you can question
+  - 322 pipes, 18.8 km of main, 29 monitoring nodes, 8,554 triples
+  - EPANET 2.2 hydraulics, K-means district metering, OWL 2 DL ontology, SPARQL running client-side
 :::
 
-[All work →](projects.qmd)
+[All work](projects.qmd)
 
 ## Contact
 
 [manish.bilore@gmail.com](mailto:manish.bilore@gmail.com) ·
 [GitHub](https://github.com/Manish-Bilore) ·
+[LinkedIn](https://www.linkedin.com/in/manish-b-44212084/) ·
 [CV](cv.qmd)

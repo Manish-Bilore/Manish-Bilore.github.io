@@ -8,13 +8,14 @@ $gray-500:     #6b7076;   // muted metadata
 $gray-200:     #e4e6e5;   // hairlines
 $primary:      #17564f;   // accent — links, category chips
 
-$font-family-sans-serif: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-$font-family-serif:      "Source Serif 4", Georgia, "Times New Roman", serif;
+// One family everywhere.
+$font-family-sans-serif: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+$font-family-serif:      $font-family-sans-serif;
 
-$font-size-root:  17px;
+$font-size-root:  16.5px;
 $line-height-base: 1.6;
 $headings-font-family: $font-family-serif;
-$headings-font-weight: 600;
+$headings-font-weight: 500;
 
 $link-color: $primary;
 $link-decoration: none;
@@ -29,7 +30,7 @@ $border-color: $gray-200;
 /*-- scss:rules --*/
 
 body {
-  font-family: $font-family-serif;
+  font-family: $font-family-sans-serif;
   font-size: 1rem;
   color: $body-color;
   -webkit-font-smoothing: antialiased;
@@ -37,6 +38,7 @@ body {
 
 // Nav, footer, metadata and other chrome in the sans face, so the reading
 // column is unambiguously the content.
+// Weight, not family, marks the difference between chrome and content.
 .navbar, .nav-footer, .quarto-listing .listing-date,
 .quarto-category, .btn, .quarto-title-meta {
   font-family: $font-family-sans-serif;
@@ -45,7 +47,7 @@ body {
 .navbar {
   border-bottom: 1px solid $border-color;
   font-size: 0.9rem;
-  .navbar-brand { font-family: $font-family-serif; font-weight: 600; font-size: 1.05rem; }
+  .navbar-brand { font-weight: 500; font-size: 1.05rem; letter-spacing: 0.01em; }
 }
 
 .nav-footer {
@@ -162,4 +164,13 @@ h2 {
     .thumbnail, .thumbnail img { flex: none; max-width: 100%; }
   }
   .facts { gap: 1.4rem; }
+}
+
+// Home-page project list. Bulleted rather than carded: the Work page carries
+// the thumbnails, so this stays a scannable index.
+.project-list {
+  padding-left: 1.1rem;
+  li { margin-bottom: 1.1rem; }
+  .p-name { font-weight: 500; }
+  .p-note { color: lighten($body-color, 22%); font-size: 0.95rem; }
 }

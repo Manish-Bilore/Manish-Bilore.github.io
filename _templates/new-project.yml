@@ -1,5 +1,5 @@
 # Copy this block into projects.yml, above or below the others. Order in the
-# file does not matter — `sort: "date desc"` on the listing decides.
+# file does not matter, `sort: "date desc"` on the listing decides.
 - title: ""
   path: ""              # https://... for a project with its own site,
                         # or projects/slug.qmd for one written up here

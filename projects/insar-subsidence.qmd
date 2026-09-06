@@ -14,7 +14,7 @@ by Prof. Y. S. Rao. Submitted June 2025.
 
 A subsidence map is a processing decision as much as a measurement. Two
 open-source time-series chains, run on the same Sentinel-1 frame, will not return
-the same numbers — they build different interferogram networks, correct the
+the same numbers, they build different interferogram networks, correct the
 atmosphere with different models, and pick their own reference point. This work
 runs both over Lucknow, quantifies where they part company, and then uses the
 result to train a susceptibility model for the parts of the city that have no
@@ -43,7 +43,7 @@ rather than ERA5, on a 90 m grid.
 A single-pair DInSAR run in SNAP (2024-12-03 / 2024-12-27, 24-day baseline,
 descending) sits in front of both as a baseline. Its fringes over the urban core
 are coherent enough to see, and uncorrected enough that the thesis treats it as a
-qualitative indicator only — which is the argument for time series in the first
+qualitative indicator only, which is the argument for time series in the first
 place.
 
 ![Mean LOS velocity over Lucknow from the MintPy chain, 2019-01-04 to 2024-12-27. Reference point on stable ground south of the core](../images/psinsar/los-velocity.jpg)
@@ -53,7 +53,7 @@ place.
 ## Where the two chains agree
 
 They agree on **where**. The hotspots are in the same places, and they persist
-against an independent StaMPS-based study of Lucknow covering 2014–2020 — the
+against an independent StaMPS-based study of Lucknow covering 2014–2020, the
 zones that were subsiding then are still subsiding now.
 
 They disagree on **how much**. Reference points are auto-selected independently
@@ -107,6 +107,6 @@ susceptibility.
 **Land cover dominates the model.** In the gain decomposition, the land-cover
 predictor carries the large majority of the model's explanatory weight, with slope
 a distant second. That is close to saying the classifier has learnt where the
-built-up area is — which is also where the labels come from, since scatterers are
+built-up area is, which is also where the labels come from, since scatterers are
 concentrated there. Breaking that circularity needs predictors the InSAR product
 does not already encode: groundwater levels, soil profile, subsurface geology.

@@ -18,9 +18,8 @@ website:
       - icon: github
         href: https://github.com/Manish-Bilore
         aria-label: GitHub
-      # TODO: replace with your actual LinkedIn URL
       - icon: linkedin
-        href: https://www.linkedin.com/in/manish-bilore/
+        href: https://www.linkedin.com/in/manish-b-44212084/
         aria-label: LinkedIn
       - icon: envelope
         href: mailto:manish.bilore@gmail.com

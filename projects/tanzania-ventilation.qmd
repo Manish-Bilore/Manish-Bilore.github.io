@@ -25,6 +25,6 @@ same programme outperformed the commercial instruments they were checked against
 ## Why it still matters to me
 
 This was the first time a microclimate model I built was answerable to an
-outcome measured in people rather than in pascals. Everything since — the
+outcome measured in people rather than in pascals. Everything since, the
 mesoscale-to-microscale chain, the insistence on a validation record travelling
-with the model — comes from that.
+with the model, comes from that.

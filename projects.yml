@@ -1,7 +1,7 @@
 # One block per project. This file is the only thing you edit to add or update work.
 #   path        where the card links to. An external URL, or a local .qmd in projects/
 #   date        controls ordering (newest first). Bump it when a project gets a real update.
-#   image       images/... — local files, so nothing breaks if a project site moves
+#   image       images/..., local files, so nothing breaks if a project site moves
 #   categories  free text; they become the filter chips on the Work page
 
 - title: "Nagpur Digital Urban Climate Twin"
@@ -10,7 +10,7 @@
   description: >
     860,000 building footprints and 96 hours of WRF fields, in the browser. WRF-ARW on
     7.5/1.5/0.3 km nests drives PALM-4U at 10 m and a CEA stock model for cooling demand;
-    the site is the validation record — 2 m air temperature against station observation,
+    the site is the validation record: 2 m air temperature against station observation,
     and what each configuration change actually bought.
   image: "images/nagpur-viewer.jpg"
   image-alt: "3D buildings under a WRF air-temperature field, station validation panel open"
@@ -32,8 +32,8 @@
   path: "projects/insar-subsidence.qmd"
   date: "2025-06-30"
   description: >
-    M.Tech thesis. Two open-source Sentinel-1 time-series chains — MintPy on the Alaska
-    Satellite Facility cloud, LiCSBAS on LiCSAR interferograms — run over the same frame to
+    M.Tech thesis. Two open-source Sentinel-1 time-series chains, MintPy on the Alaska
+    Satellite Facility cloud and LiCSBAS on LiCSAR interferograms, run over the same frame to
     separate what a subsidence map measures from what its processing decides. Lucknow reaches
     −63.9 mm/yr; the deformation field then trains an XGBoost susceptibility model (AUC 0.705)
     for the ground with no scatterers to measure.
@@ -70,7 +70,7 @@
   description: >
     MA thesis, CITA studio, Royal Danish Academy. Run the water first: 100,000-particle
     simulation of rainfall and surface water rise over the terrain as it is, then a procedural
-    script that places mitigating elements against the inundation it exposes — five
+    script that places mitigating elements against the inundation it exposes. Five
     interventions, each graded by simulating the same terrain with and without it.
   image: "images/runoff/amager-wetlands.jpg"
   image-alt: "Proposed wetland and holding-pond network threaded between new housing on Amager"
@@ -82,6 +82,6 @@
   description: >
     CFD of airflow and thermal conditions for experimental solar housing in Tanzania, validated
     against measured PET and UTCI with IoT sensor units built in Copenhagen and monitored
-    remotely. The design objective was mosquito control through ventilation — the first
+    remotely. The design objective was mosquito control through ventilation, the first
     microclimate model I had to defend as a health claim rather than a physics result.
   categories: [CFD, thermal comfort, IoT, field deployment]

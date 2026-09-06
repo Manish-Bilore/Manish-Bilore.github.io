@@ -34,8 +34,8 @@ rather than a hypothesis submitted to it.
 site terrain, and reports cut-and-fill volumes for any proposed change, so the
 earthwork cost of a move is visible while the move is being made.
 
-**Water analysis** runs meshless particle simulation across that terrain —
-particle flow, speed, and concavity against slope — for two loading cases:
+**Water analysis** runs meshless particle simulation across that terrain,
+particle flow, speed, and concavity against slope, for two loading cases:
 rainfall landing on the surface, and water rising through it. The combined run
 carries 20,000 particles at a Brownian force of 0.5 and drag of 0.1.
 
@@ -49,14 +49,14 @@ the water actually goes.
 
 The procedural script needs to know what each element is worth before it can
 place it. So each intervention was simulated twice on the same terrain at the
-same slope-to-depth ratio — once bare as a control, once with the element in
-place — and graded on particle velocity and inundation extent.
+same slope-to-depth ratio, once bare as a control, once with the element in
+place, and graded on particle velocity and inundation extent.
 
 Five elements came out of that, each drawn as an assembly of metal geocell,
 gabion and channel rather than as a shape: a flood-able amphitheatre park, a
 weir, an open/closed drain channel, an underground tank, and a living retaining
 wall. Each is meant to read as public amenity on a dry day and as hydraulic
-infrastructure on a wet one — the amphitheatre holds an everyday, a
+infrastructure on a wet one, the amphitheatre holds an everyday, a
 normal-rainfall and an extreme-rainfall state, and stays a park in all three.
 
 ![The five catalogued elements, drawn as assemblies rather than as shapes](../images/runoff/functional-elements.jpg)
@@ -69,8 +69,8 @@ normal-rainfall and an extreme-rainfall state, and stays a park in all three.
 
 A separate experiment series swept the parameter space behind that placement:
 four modification patterns at a 15% slope gradient, under cut and under fill,
-against two fluid types — 250 particles standing for a flash flood, 1,000 for
-continuous rainfall — over 500 time frames each. The question was which patterns
+against two fluid types (250 particles standing for a flash flood, 1,000 for
+continuous rainfall) over 500 time frames each. The question was which patterns
 of landscape change collect water and which merely move it somewhere else.
 
 Scaled up to Tårnby, the same loop marks the flood-prone blocks, separates the
@@ -91,8 +91,7 @@ meshless and unvalidated against gauge data. It produces plausible flow structur
 and relative comparisons between options, not depths or discharges, and nothing
 here should be read as a design flood.
 
-**No return periods.** "Normal" and "extreme" rainfall are particle counts —
-10,000 and 100,000 — not recurrence intervals. Tying those loading cases to
+**No return periods.** "Normal" and "extreme" rainfall are particle counts of 10,000 and 100,000, not recurrence intervals. Tying those loading cases to
 Danish design rainfall statistics is the first thing this would need to be
 operational.
 
@@ -103,7 +102,7 @@ catalogue rather than predict performance elsewhere.
 ## Where it went
 
 This is the earliest work on this site and the origin of most of what follows.
-The chain here — terrain, simulation, a control to test against, then
-intervention — is the one I now run with WRF and PALM-4U instead of particles,
+The chain here, terrain, simulation, a control to test against, then
+intervention, is the one I now run with WRF and PALM-4U instead of particles,
 over cities instead of blocks, and against station observations instead of a
 bare-terrain run.
