@@ -1,0 +1,212 @@
+[
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "CV",
+    "section": "",
+    "text": "Download PDF"
+  },
+  {
+    "objectID": "cv.html#experience",
+    "href": "cv.html#experience",
+    "title": "CV",
+    "section": "Experience",
+    "text": "Experience\nProgram Associate — International Forum for Environment, Sustainability & Technology (iFOREST), Delhi · Jul 2025 –\nCompiled and ran WRF from scratch on cloud HPC for two Indian cities, reaching 3.25 K RMSE on 2 m air temperature. Built the Digital Urban Climate Twin chain (WRF → PALM-4U → CEA) for testing heat-island interventions, with PALM-4U static driver generation automated. Automated WUDAPT training-area generation from urban morphometry, giving LCZ maps at 75–80% accuracy, and benchmarked XGBoost against a CNN on identical inputs to attribute per-class performance.\nResearch Assistant — Royal Danish Academy, Copenhagen · Aug 2021 – Dec 2022\nDeveloped and remotely monitored four low-cost IoT particulate sensors that outperformed commercial units, including a six-month deployment in Tanzania. Built RANS CFD models in OpenFOAM and ANSYS Fluent for architectural wind flow, validated against measured PET and UTCI in experimental solar homes.\nProject Manager — Fairfest Media, Mumbai · Jun 2018 – Jul 2019\nLed a multi-city team producing urban-sector insight for partners; market segmentation and financial modelling for trade-show positioning."
+  },
+  {
+    "objectID": "cv.html#education",
+    "href": "cv.html#education",
+    "title": "CV",
+    "section": "Education",
+    "text": "Education\nM.Tech Geoinformatics — CSRE, IIT Bombay · 2023–2025 MA Computation in Architecture — CITA, Royal Danish Academy, Copenhagen · 2019–2021 B.Arch — KRVIA, University of Mumbai · 2012–2017"
+  },
+  {
+    "objectID": "cv.html#selected-projects",
+    "href": "cv.html#selected-projects",
+    "title": "CV",
+    "section": "Selected projects",
+    "text": "Selected projects\nSee Work. Also: policy-intelligence decision support for spatial governance (2025–), flood segmentation with Attention U-Net on Sentinel-1/2 in GEE (F1 0.823), and game-engine acoustic modelling for urban digital twins."
+  },
+  {
+    "objectID": "cv.html#skills",
+    "href": "cv.html#skills",
+    "title": "CV",
+    "section": "Skills",
+    "text": "Skills\nUrban climate WRF · PALM-4U (LES) · CEA · ENVI-met · WUDAPT/LCZ Simulation OpenFOAM · ANSYS Fluent · RANS/CFD · Unity GIS & RS QGIS · ArcGIS · PostGIS · Google Earth Engine · SNAP/PSInSAR Computing Python · R · SQL · C/C++ · Linux · cloud HPC GeoAI XGBoost · CNN · Attention U-Net · SHAP Semantics OWL · RDF · Protégé · ontology design · Neo4j Languages English · Hindi · Marathi"
+  },
+  {
+    "objectID": "projects/tanzania-ventilation.html",
+    "href": "projects/tanzania-ventilation.html",
+    "title": "Ventilation design as disease control",
+    "section": "",
+    "text": "Research Assistant, Institute of Architecture and Technology, Royal Danish Academy, Copenhagen, 2021–2022.\nAirflow and thermal conditions in experimental solar housing, modelled as mesh-based RANS CFD in OpenFOAM and ANSYS Fluent. The design objective was not comfort alone: ventilation was the intervention being tested for mosquito control, so the model had to hold up as a health claim and not only as a physics result. That constraint is what pushed the work from simulation into measurement."
+  },
+  {
+    "objectID": "projects/tanzania-ventilation.html#measuring-the-thing-you-modelled",
+    "href": "projects/tanzania-ventilation.html#measuring-the-thing-you-modelled",
+    "title": "Ventilation design as disease control",
+    "section": "Measuring the thing you modelled",
+    "text": "Measuring the thing you modelled\nI assembled Internet-of-Things sensor units, deployed them on site in Tanzania, and monitored them remotely from Copenhagen over a six-month campaign. Model output was validated against measured Physiological Equivalent Temperature and Universal Thermal Climate Index. Four low-cost particulate units built for the same programme outperformed the commercial instruments they were checked against."
+  },
+  {
+    "objectID": "projects/tanzania-ventilation.html#why-it-still-matters-to-me",
+    "href": "projects/tanzania-ventilation.html#why-it-still-matters-to-me",
+    "title": "Ventilation design as disease control",
+    "section": "Why it still matters to me",
+    "text": "Why it still matters to me\nThis was the first time a microclimate model I built was answerable to an outcome measured in people rather than in pascals. Everything since — the mesoscale-to-microscale chain, the insistence on a validation record travelling with the model — comes from that."
+  },
+  {
+    "objectID": "projects/landslide-fuzzy-inference.html",
+    "href": "projects/landslide-fuzzy-inference.html",
+    "title": "Landslide susceptibility by fuzzy inference",
+    "section": "",
+    "text": "Repository\nPredictive mapping of landslide-prone terrain in a district where the training inventory is thin and the consequences of a false negative are not symmetric with those of a false positive."
+  },
+  {
+    "objectID": "projects/landslide-fuzzy-inference.html#approach",
+    "href": "projects/landslide-fuzzy-inference.html#approach",
+    "title": "Landslide susceptibility by fuzzy inference",
+    "section": "Approach",
+    "text": "Approach\nTwelve conditioning parameters are assembled in R, then combined in a fuzzy inference system rather than a purely data-driven classifier. The choice is deliberate: where the landslide inventory is small, a rule base that a geomorphologist can read and argue with is worth more than a marginal gain in fitted accuracy from a model that cannot be interrogated.\n\n\n\n\n\n\n\n\nStage\nWhat it produces\nScript\n\n\n\n\nLand cover\nRandom-forest classification of Sentinel-2\n01_LULC_RF.Rmd\n\n\nVegetation\nNDVI as a separate continuous conditioning layer\n02_NDVI.Rmd\n\n\nTerrain\nSlope, aspect and curvature from the Cartosat DEM\n03_Cartosat_DEM.Rmd\n\n\nAssembly\nParameter stack, unnormalised, as the FIS input frame\n04_Dataframe_Generation.Rmd\n\n\nInference\nMembership functions and rule base over the stack\n05_FuzzyInference.R\n\n\n\n\n\n\nRandom-forest land cover over Wayanad district, one of the twelve conditioning layers"
+  },
+  {
+    "objectID": "projects/landslide-fuzzy-inference.html#where-it-goes-next",
+    "href": "projects/landslide-fuzzy-inference.html#where-it-goes-next",
+    "title": "Landslide susceptibility by fuzzy inference",
+    "section": "Where it goes next",
+    "text": "Where it goes next\nThe fuzzy system is the baseline for a comparison rather than the end of the work: ANFIS, then neural and ensemble approaches over the same parameter stack, so that differences between models can be attributed to the model and not to the inputs. The reference method is this Computers & Geosciences paper (2020). ⟨Replace with the full citation before publishing the page.⟩"
+  },
+  {
+    "objectID": "projects/landslide-fuzzy-inference.html#limitations",
+    "href": "projects/landslide-fuzzy-inference.html#limitations",
+    "title": "Landslide susceptibility by fuzzy inference",
+    "section": "Limitations",
+    "text": "Limitations\nThe inventory constrains everything downstream. Membership functions are set from the literature and from terrain reasoning rather than fitted, so the map should be read as a ranking of relative susceptibility, not as a probability."
+  },
+  {
+    "objectID": "projects/surface-runoff-mitigation.html",
+    "href": "projects/surface-runoff-mitigation.html",
+    "title": "Surface run-off water mitigation",
+    "section": "",
+    "text": "Project at the Royal Danish Academy Read the thesis (PDF)\nMA thesis, Computation in Architecture, CITA studio, Royal Danish Academy, Copenhagen. Tutored by Tom Svilans, Spring 2021. Sited on Amager and Tårnby, south of Copenhagen.\nFlood design usually runs one way: a designer proposes a landscape, then a model checks it. This inverts the order. Particle simulation of rainfall and surface water rise runs first, over the terrain as it is; the inundation and accelerated-flow zones it exposes become the prompt, and a procedural script places mitigating elements against them. The design is an output of the water rather than a hypothesis submitted to it."
+  },
+  {
+    "objectID": "projects/surface-runoff-mitigation.html#three-tools-in-a-loop",
+    "href": "projects/surface-runoff-mitigation.html#three-tools-in-a-loop",
+    "title": "Surface run-off water mitigation",
+    "section": "Three tools in a loop",
+    "text": "Three tools in a loop\nLandscape analysis derives contour, slope and watershed structure from the site terrain, and reports cut-and-fill volumes for any proposed change, so the earthwork cost of a move is visible while the move is being made.\nWater analysis runs meshless particle simulation across that terrain — particle flow, speed, and concavity against slope — for two loading cases: rainfall landing on the surface, and water rising through it. The combined run carries 20,000 particles at a Brownian force of 0.5 and drag of 0.1.\nProgram generation takes the fluid vectors and site context and voxelises a layout: circulation, access and blue–green space allotment placed against where the water actually goes.\n\n\n\nParticle simulation over the site terrain: rainfall interaction, surface-level water rise, and the two combined"
+  },
+  {
+    "objectID": "projects/surface-runoff-mitigation.html#grading-the-interventions",
+    "href": "projects/surface-runoff-mitigation.html#grading-the-interventions",
+    "title": "Surface run-off water mitigation",
+    "section": "Grading the interventions",
+    "text": "Grading the interventions\nThe procedural script needs to know what each element is worth before it can place it. So each intervention was simulated twice on the same terrain at the same slope-to-depth ratio — once bare as a control, once with the element in place — and graded on particle velocity and inundation extent.\nFive elements came out of that, each drawn as an assembly of metal geocell, gabion and channel rather than as a shape: a flood-able amphitheatre park, a weir, an open/closed drain channel, an underground tank, and a living retaining wall. Each is meant to read as public amenity on a dry day and as hydraulic infrastructure on a wet one — the amphitheatre holds an everyday, a normal-rainfall and an extreme-rainfall state, and stays a park in all three.\n\n\n\nThe five catalogued elements, drawn as assemblies rather than as shapes\n\n\n\n\n\nControl against intervention for the amphitheatre: the same terrain, simulated bare and with the element in place"
+  },
+  {
+    "objectID": "projects/surface-runoff-mitigation.html#from-prompt-to-plan",
+    "href": "projects/surface-runoff-mitigation.html#from-prompt-to-plan",
+    "title": "Surface run-off water mitigation",
+    "section": "From prompt to plan",
+    "text": "From prompt to plan\n\n\n\nSimulate, read the inundation, place the channel, then let the script place the rest\n\n\nA separate experiment series swept the parameter space behind that placement: four modification patterns at a 15% slope gradient, under cut and under fill, against two fluid types — 250 particles standing for a flash flood, 1,000 for continuous rainfall — over 500 time frames each. The question was which patterns of landscape change collect water and which merely move it somewhere else.\nScaled up to Tårnby, the same loop marks the flood-prone blocks, separates the area affected by inundation from the area worth redeveloping, and proposes a porous urban form: integrated wetlands, distributed holding ponds and water channels threaded between new housing.\n\n\n\nAmager, with the proposed wetland and pond network placed between the existing drains and new housing\n\n\nAlongside it sits a comparative study of flood tactics in Copenhagen, Mumbai, Hong Kong, Miami, New York and Oslo, separating the tactics that generalise across coastal cities from the ones that belong to one."
+  },
+  {
+    "objectID": "projects/surface-runoff-mitigation.html#limitations",
+    "href": "projects/surface-runoff-mitigation.html#limitations",
+    "title": "Surface run-off water mitigation",
+    "section": "Limitations",
+    "text": "Limitations\nThe particle model is a design instrument, not a hydraulic one. It is meshless and unvalidated against gauge data. It produces plausible flow structure and relative comparisons between options, not depths or discharges, and nothing here should be read as a design flood.\nNo return periods. “Normal” and “extreme” rainfall are particle counts — 10,000 and 100,000 — not recurrence intervals. Tying those loading cases to Danish design rainfall statistics is the first thing this would need to be operational.\nIntervention grades are relative and single-site. Each element is scored against one control terrain at one slope-to-depth ratio, so the grades order the catalogue rather than predict performance elsewhere."
+  },
+  {
+    "objectID": "projects/surface-runoff-mitigation.html#where-it-went",
+    "href": "projects/surface-runoff-mitigation.html#where-it-went",
+    "title": "Surface run-off water mitigation",
+    "section": "Where it went",
+    "text": "Where it went\nThis is the earliest work on this site and the origin of most of what follows. The chain here — terrain, simulation, a control to test against, then intervention — is the one I now run with WRF and PALM-4U instead of particles, over cities instead of blocks, and against station observations instead of a bare-terrain run."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Manish Bilore",
+    "section": "",
+    "text": "I am an architect who moved into urban climate modelling through computational fluid dynamics. Architectural practice takes a great deal for granted, and the assumptions buried in its comfort models are what I have been chasing upward in scale ever since — from a room, to a building, to a city.\nI build the mesoscale-to-microscale chain at iFOREST in Delhi: WRF compiled and run from scratch on cloud HPC for two Indian cities, driving PALM-4U for interventions in the existing urban fabric and City Energy Analyst for building energy response. Before that, an M.Tech in Geoinformatics at CSRE, IIT Bombay, and CFD and low-cost particulate sensing at the Royal Danish Academy, Copenhagen.\nWhat holds these together is validation. A microclimate model becomes a claim about people the moment anyone acts on it, so the work I keep is the work that carries its own error record — station comparisons, per-class classifier attribution, and a statement of where the method fails. One current thread is documenting where the 2012 Local Climate Zone typology does not describe the urban form of Indian cities."
+  },
+  {
+    "objectID": "index.html#recent-work",
+    "href": "index.html#recent-work",
+    "title": "Manish Bilore",
+    "section": "Recent work",
+    "text": "Recent work\n\n\n\n\n\n\n\n\n\n\nNagpur Digital Urban Climate Twin\n\n\nWhether the chain that produces a heat-mitigation number can be trusted. WRF-ARW on 7.5/1.5/0.3 km nests with a single-layer urban canopy and a city-specific anthropogenic heat profile, driving PALM-4U at 10 m and a CEA stock model for cooling demand. The site is the validation record: 2 m air temperature against station observation at Mahal, and what each configuration change actually bought. 860k building footprints and 96 h of WRF fields render in the browser.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOntology-driven water distribution twin\n\n\nAn IIT Bombay campus network from an estate-office AutoCAD drawing to a queryable knowledge graph. EPANET 2.2 hydraulics over 322 pipes and 18.8 km of main, K-means district metering with a hierarchical overlay filter on elevation, pressure and demand placing 29 monitoring nodes, and an OWL 2 DL ontology aligned to SOSA/SSN and QUDT. SPARQL runs client-side over all 8,554 triples, so a question spanning hydraulics and instrumentation becomes a query rather than a fortnight of cross-referencing.\n\n\n\n\n\n\n\n\nNo matching items\n\nAll work →"
+  },
+  {
+    "objectID": "index.html#contact",
+    "href": "index.html#contact",
+    "title": "Manish Bilore",
+    "section": "Contact",
+    "text": "Contact\nmanish.bilore@gmail.com · GitHub · CV"
+  },
+  {
+    "objectID": "projects/insar-subsidence.html",
+    "href": "projects/insar-subsidence.html",
+    "title": "InSAR time series for urban land subsidence",
+    "section": "",
+    "text": "Read the thesis (PDF)\nM.Tech thesis, Centre of Studies in Resources Engineering, IIT Bombay, supervised by Prof. Y. S. Rao. Submitted June 2025.\nA subsidence map is a processing decision as much as a measurement. Two open-source time-series chains, run on the same Sentinel-1 frame, will not return the same numbers — they build different interferogram networks, correct the atmosphere with different models, and pick their own reference point. This work runs both over Lucknow, quantifies where they part company, and then uses the result to train a susceptibility model for the parts of the city that have no scatterers to measure."
+  },
+  {
+    "objectID": "projects/insar-subsidence.html#two-chains-one-frame",
+    "href": "projects/insar-subsidence.html#two-chains-one-frame",
+    "title": "InSAR time series for urban land subsidence",
+    "section": "Two chains, one frame",
+    "text": "Two chains, one frame\nMintPy on OpenSARLab. Sentinel-1 IW SLC, VV, processed to interferograms through ASF HyP3 and inverted with the small-baseline workflow on the Alaska Satellite Facility’s cloud JupyterHub. Tropospheric delay corrected with ERA5 reanalysis pulled from the Copernicus Climate Data Store; network optimisation, ramp correction and velocity estimation follow, with the reference pixel placed on stable ground.\nLiCSBAS on LiCSAR. The same frame, taken from pre-processed COMET-LiCS interferograms, inverted with loop-closure-screened SBAS and corrected with GACOS rather than ERA5, on a 90 m grid.\nA single-pair DInSAR run in SNAP (2024-12-03 / 2024-12-27, 24-day baseline, descending) sits in front of both as a baseline. Its fringes over the urban core are coherent enough to see, and uncorrected enough that the thesis treats it as a qualitative indicator only — which is the argument for time series in the first place.\n\n\n\nMean LOS velocity over Lucknow from the MintPy chain, 2019-01-04 to 2024-12-27. Reference point on stable ground south of the core\n\n\n\n\n\nThe same velocity field masked to built-up land cover. The high-rate zones sit inside the dense urban fabric rather than beside it"
+  },
+  {
+    "objectID": "projects/insar-subsidence.html#where-the-two-chains-agree",
+    "href": "projects/insar-subsidence.html#where-the-two-chains-agree",
+    "title": "InSAR time series for urban land subsidence",
+    "section": "Where the two chains agree",
+    "text": "Where the two chains agree\nThey agree on where. The hotspots are in the same places, and they persist against an independent StaMPS-based study of Lucknow covering 2014–2020 — the zones that were subsiding then are still subsiding now.\nThey disagree on how much. Reference points are auto-selected independently and do not coincide, so the two velocity fields carry different offsets. LiCSBAS masks harder and returns a sparser, higher-confidence field; MintPy retains moderate-noise pixels through phase bridging and returns broader coverage. GACOS and ERA5 remove different noise components. For Mumbai, LiCSBAS returned nothing usable at all across the selected frames, so that city rests on one chain only.\nThe practical reading: the spatial pattern is robust to the choice of chain, the absolute rate is not. Anything downstream should be built on the pattern.\n\n\n\nDisplacement time series at the fastest-moving scatterer: −3.23 ± 0.05 cm/yr, near-linear across six years"
+  },
+  {
+    "objectID": "projects/insar-subsidence.html#from-measurement-to-susceptibility",
+    "href": "projects/insar-subsidence.html#from-measurement-to-susceptibility",
+    "title": "InSAR time series for urban land subsidence",
+    "section": "From measurement to susceptibility",
+    "text": "From measurement to susceptibility\nPersistent scatterers only exist where something reflects stably. To say anything about the rest of the city, the deformation field has to become training data. Velocities below −10 mm/yr label the positive class; predictors are terrain attributes from SRTM (slope, elevation, curvature, aspect, TWI, SPI), a random-forest land cover classification of Sentinel-2 (out-of-bag error 0.081), and anthropogenic layers for road and construction density. Collinearity screened by Pearson correlation and VIF. XGBoost beat random forest and SVM across the metric set; its probability surface was interpolated by ordinary kriging under a Gaussian variogram and cut into five zones.\n\n\n\n\n\n\nLand subsidence susceptibility, five zones\n\n\n\n\n\n\n\nCross-validated XGBoost performance\n\n\n\n\n\nAUC 0.705, balanced accuracy 0.654, sensitivity 0.673, specificity 0.635, kappa 0.308. Moderate, and reported as moderate."
+  },
+  {
+    "objectID": "projects/insar-subsidence.html#limitations",
+    "href": "projects/insar-subsidence.html#limitations",
+    "title": "InSAR time series for urban land subsidence",
+    "section": "Limitations",
+    "text": "Limitations\nLOS is not vertical. Every rate here is line-of-sight. Converting to vertical motion assumes horizontal displacement is negligible, which in a groundwater-driven setting is defensible and still an assumption.\nEverything is relative to a reference pixel. Both chains measure deformation against a point assumed stable. If that point moves, the whole field shifts with it.\nThe susceptibility surface is an interpolated model output, not an observation. Kriging an XGBoost probability produces something smooth and readable that no instrument ever measured. It should be read as a ranking of relative susceptibility.\nLand cover dominates the model. In the gain decomposition, the land-cover predictor carries the large majority of the model’s explanatory weight, with slope a distant second. That is close to saying the classifier has learnt where the built-up area is — which is also where the labels come from, since scatterers are concentrated there. Breaking that circularity needs predictors the InSAR product does not already encode: groundwater levels, soil profile, subsurface geology."
+  },
+  {
+    "objectID": "projects/synthetic-urban-data.html",
+    "href": "projects/synthetic-urban-data.html",
+    "title": "Synthetic geospatial urban data",
+    "section": "",
+    "text": "Repository\nGranular mobility data for Indian cities is either unavailable or personal enough that releasing it is not an option. Synthetic data is a way through: reproduce the statistical structure of the real thing without reproducing anyone in it, and get a sandbox for scenarios that no observed dataset can answer."
+  },
+  {
+    "objectID": "projects/synthetic-urban-data.html#three-scripts",
+    "href": "projects/synthetic-urban-data.html#three-scripts",
+    "title": "Synthetic geospatial urban data",
+    "section": "Three scripts",
+    "text": "Three scripts\nPopulation. Builds a synthetic population for Bandra carrying the demographic and socio-economic structure of the ward, from points of interest and a boundary shapefile.\nMobility. Simulates trips probabilistically against land use, transit availability and behavioural assumptions; trip points are generated through a kernel density surface rather than uniformly, so origins concentrate where activity concentrates.\nEvaluation. Calibrates the output by comparing aggregate metrics with the limited real data that is available, then models demand per hexagon with a random forest and tests the result for spatial structure with local Moran’s I.\n\n\n\nLocal Moran’s I clusters of predicted demand across the hexagon grid. Whether the synthetic surface clusters at all, and where, is the check on whether the generator reproduced spatial structure or only marginal distributions"
+  },
+  {
+    "objectID": "projects/synthetic-urban-data.html#limitations",
+    "href": "projects/synthetic-urban-data.html#limitations",
+    "title": "Synthetic geospatial urban data",
+    "section": "Limitations",
+    "text": "Limitations\nSynthetic data inherits its assumptions and hides them well. The population is representative in aggregate and fictitious individually, so results hold at the scale of the calibration and not below it. The calibration itself is only as good as the sparse observations it is fitted against, which is the same data scarcity the method was built to work around."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Work",
+    "section": "",
+    "text": "Projects with their own site open in a new tab; the rest are written up here.\n\n\n\n\n\n\n\n\n\n\nNagpur Digital Urban Climate Twin\n\n\n\nurban climate\n\nWRF\n\nPALM-4U\n\nLCZ\n\nvalidation\n\n\n\nWhether the chain that produces a heat-mitigation number can be trusted. WRF-ARW on 7.5/1.5/0.3 km nests with a single-layer urban canopy and a city-specific anthropogenic heat profile, driving PALM-4U at 10 m and a CEA stock model for cooling demand. The site is the validation record: 2 m air temperature against station observation at Mahal, and what each configuration change actually bought. 860k building footprints and 96 h of WRF fields render in the browser.\n\n\n\n\n\nSep 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nOntology-driven water distribution twin\n\n\n\ndigital twin\n\nEPANET\n\nontology\n\nSPARQL\n\nIoT\n\n\n\nAn IIT Bombay campus network from an estate-office AutoCAD drawing to a queryable knowledge graph. EPANET 2.2 hydraulics over 322 pipes and 18.8 km of main, K-means district metering with a hierarchical overlay filter on elevation, pressure and demand placing 29 monitoring nodes, and an OWL 2 DL ontology aligned to SOSA/SSN and QUDT. SPARQL runs client-side over all 8,554 triples, so a question spanning hydraulics and instrumentation becomes a query rather than a fortnight of cross-referencing.\n\n\n\n\n\nAug 20, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nInSAR time series for urban land subsidence\n\n\n\nInSAR\n\nSentinel-1\n\nsubsidence\n\nXGBoost\n\nthesis\n\n\n\nM.Tech thesis. Two open-source Sentinel-1 time-series chains — MintPy on the Alaska Satellite Facility cloud and LiCSBAS on LiCSAR interferograms — run over the same frame to separate what a subsidence map measures from what its processing decides. Lucknow reaches −63.9 mm/yr in peri-urban pockets; Delhi, Chandigarh, Mumbai and Kolkata follow. The deformation field then trains an XGBoost susceptibility model (AUC 0.705) for the parts of the city with no scatterers to measure.\n\n\n\n\n\nJun 30, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nLandslide susceptibility by fuzzy inference\n\n\n\nlandslide\n\nfuzzy inference\n\nrandom forest\n\nSentinel-2\n\nR\n\n\n\nPredictive mapping of landslide-prone terrain in Wayanad district from twelve conditioning parameters. Random-forest land cover from Sentinel-2, NDVI and Cartosat DEM derivatives feed a fuzzy inference system, chosen so the rule base stays legible where training inventories are thin.\n\n\n\n\n\nNov 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nSynthetic geospatial urban data\n\n\n\nsynthetic data\n\nmobility\n\nrandom forest\n\nspatial statistics\n\nR\n\n\n\nTrip data for Bandra, Mumbai, where none exists to plan with. A synthetic population carrying local demographic and socio-economic structure, mobility simulated against land use and transit availability, then calibrated by comparing aggregate metrics against what little real data is available. Demand is predicted per hexagon and tested for spatial clustering.\n\n\n\n\n\nNov 1, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nVentilation design as disease control\n\n\n\nCFD\n\nthermal comfort\n\nIoT\n\nfield deployment\n\n\n\nCFD of airflow and thermal conditions for experimental solar housing in Tanzania, validated against measured PET and UTCI with IoT sensor units built in Copenhagen, deployed on site and monitored remotely. The design objective was mosquito control through ventilation — the first microclimate model I had to defend as a health claim rather than as a physics result.\n\n\n\n\n\nDec 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nSurface run-off water mitigation\n\n\n\nparticle simulation\n\nflood\n\nlandscape\n\nprocedural design\n\nthesis\n\n\n\nMA thesis, CITA studio, Royal Danish Academy. A design work-flow that runs the water first: meshless particle simulation of rainfall and surface water rise over the terrain as it is, then a procedural script that places mitigating elements against the inundation it exposes. Five interventions — flood-able park, weir, drain channel, underground tank, living retaining wall — each graded by simulating the same terrain with and without it, then scaled to a porous urban form for Tårnby, Copenhagen.\n\n\n\n\n\nJul 1, 2021\n\n\n\n\n\nNo matching items"
+  }
+]
