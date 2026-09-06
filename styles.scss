@@ -64,6 +64,23 @@ h2 {
   border-bottom: 1px solid $border-color;   // the rule marks a section break, nothing else
 }
 
+// Home-page hero. The subject of this site is visual; the first thing on the
+// page should be an output, not a sentence about outputs.
+.hero {
+  margin: 0 0 2.2rem;
+  img {
+    width: 100%;
+    border: 1px solid $border-color;
+    display: block;
+  }
+  figcaption, p.caption, .figure-caption {
+    font-family: $font-family-sans-serif;
+    font-size: 0.78rem;
+    color: $gray-500;
+    margin-top: 0.5rem;
+  }
+}
+
 // Lede paragraph on the home page.
 .lede {
   font-size: 1.16rem;

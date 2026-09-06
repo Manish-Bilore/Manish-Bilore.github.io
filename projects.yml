@@ -8,12 +8,10 @@
   path: "https://manish-bilore.github.io/nagpur-duct-site/"
   date: "2026-09-01"
   description: >
-    Whether the chain that produces a heat-mitigation number can be trusted. WRF-ARW on
-    7.5/1.5/0.3 km nests with a single-layer urban canopy and a city-specific anthropogenic
-    heat profile, driving PALM-4U at 10 m and a CEA stock model for cooling demand. The site
-    is the validation record: 2 m air temperature against station observation at Mahal, and
-    what each configuration change actually bought. 860k building footprints and 96 h of WRF
-    fields render in the browser.
+    860,000 building footprints and 96 hours of WRF fields, in the browser. WRF-ARW on
+    7.5/1.5/0.3 km nests drives PALM-4U at 10 m and a CEA stock model for cooling demand;
+    the site is the validation record — 2 m air temperature against station observation,
+    and what each configuration change actually bought.
   image: "images/nagpur-viewer.jpg"
   image-alt: "3D buildings under a WRF air-temperature field, station validation panel open"
   categories: [urban climate, WRF, PALM-4U, LCZ, validation]
@@ -22,12 +20,10 @@
   path: "https://manish-bilore.github.io/wdn-digital-twin/"
   date: "2026-08-20"
   description: >
-    An IIT Bombay campus network from an estate-office AutoCAD drawing to a queryable
-    knowledge graph. EPANET 2.2 hydraulics over 322 pipes and 18.8 km of main, K-means
-    district metering with a hierarchical overlay filter on elevation, pressure and demand
-    placing 29 monitoring nodes, and an OWL 2 DL ontology aligned to SOSA/SSN and QUDT.
-    SPARQL runs client-side over all 8,554 triples, so a question spanning hydraulics and
-    instrumentation becomes a query rather than a fortnight of cross-referencing.
+    An IIT Bombay campus network from an estate-office CAD drawing to a graph you can
+    question: 322 pipes, 18.8 km of main, 29 monitoring nodes, 8,554 triples. EPANET 2.2
+    hydraulics, K-means district metering and an OWL 2 DL ontology, with SPARQL running
+    client-side in the reader's browser.
   image: "images/wdn-sensors.png"
   image-alt: "Campus water network with 29 monitoring nodes across five district metered areas"
   categories: [digital twin, EPANET, ontology, SPARQL, IoT]
@@ -37,11 +33,10 @@
   date: "2025-06-30"
   description: >
     M.Tech thesis. Two open-source Sentinel-1 time-series chains — MintPy on the Alaska
-    Satellite Facility cloud and LiCSBAS on LiCSAR interferograms — run over the same frame
-    to separate what a subsidence map measures from what its processing decides. Lucknow
-    reaches −63.9 mm/yr in peri-urban pockets; Delhi, Chandigarh, Mumbai and Kolkata follow.
-    The deformation field then trains an XGBoost susceptibility model (AUC 0.705) for the
-    parts of the city with no scatterers to measure.
+    Satellite Facility cloud, LiCSBAS on LiCSAR interferograms — run over the same frame to
+    separate what a subsidence map measures from what its processing decides. Lucknow reaches
+    −63.9 mm/yr; the deformation field then trains an XGBoost susceptibility model (AUC 0.705)
+    for the ground with no scatterers to measure.
   image: "images/psinsar/lssm.jpg"
   image-alt: "Land subsidence susceptibility map of Lucknow in five risk zones"
   categories: [InSAR, Sentinel-1, subsidence, XGBoost, thesis]
@@ -50,10 +45,9 @@
   path: "projects/landslide-fuzzy-inference.qmd"
   date: "2024-11-15"
   description: >
-    Predictive mapping of landslide-prone terrain in Wayanad district from twelve conditioning
-    parameters. Random-forest land cover from Sentinel-2, NDVI and Cartosat DEM derivatives
-    feed a fuzzy inference system, chosen so the rule base stays legible where training
-    inventories are thin.
+    Twelve conditioning parameters over Wayanad district: random-forest land cover from
+    Sentinel-2, NDVI and Cartosat DEM derivatives feeding a fuzzy inference system, chosen so
+    the rule base stays legible where the landslide inventory is thin.
   image: "images/gnr627-lulc.jpg"
   image-alt: "Random-forest land cover classification of Wayanad district"
   categories: [landslide, fuzzy inference, random forest, Sentinel-2, R]
@@ -63,10 +57,9 @@
   date: "2024-11-01"
   description: >
     Trip data for Bandra, Mumbai, where none exists to plan with. A synthetic population
-    carrying local demographic and socio-economic structure, mobility simulated against land
-    use and transit availability, then calibrated by comparing aggregate metrics against what
-    little real data is available. Demand is predicted per hexagon and tested for spatial
-    clustering.
+    carrying local socio-economic structure, mobility simulated against land use and transit,
+    calibrated against what little real data exists, then demand predicted per hexagon and
+    tested for spatial clustering.
   image: "images/som787-morans.png"
   image-alt: "Local Moran's I cluster map of predicted demand across Bandra"
   categories: [synthetic data, mobility, random forest, spatial statistics, R]
@@ -75,12 +68,10 @@
   path: "projects/surface-runoff-mitigation.qmd"
   date: "2021-07-01"
   description: >
-    MA thesis, CITA studio, Royal Danish Academy. A design work-flow that runs the water
-    first: meshless particle simulation of rainfall and surface water rise over the terrain
-    as it is, then a procedural script that places mitigating elements against the inundation
-    it exposes. Five interventions — flood-able park, weir, drain channel, underground tank,
-    living retaining wall — each graded by simulating the same terrain with and without it,
-    then scaled to a porous urban form for Tårnby, Copenhagen.
+    MA thesis, CITA studio, Royal Danish Academy. Run the water first: 100,000-particle
+    simulation of rainfall and surface water rise over the terrain as it is, then a procedural
+    script that places mitigating elements against the inundation it exposes — five
+    interventions, each graded by simulating the same terrain with and without it.
   image: "images/runoff/amager-wetlands.jpg"
   image-alt: "Proposed wetland and holding-pond network threaded between new housing on Amager"
   categories: [particle simulation, flood, landscape, procedural design, thesis]
@@ -89,9 +80,8 @@
   path: "projects/tanzania-ventilation.qmd"
   date: "2022-12-01"
   description: >
-    CFD of airflow and thermal conditions for experimental solar housing in Tanzania,
-    validated against measured PET and UTCI with IoT sensor units built in Copenhagen,
-    deployed on site and monitored remotely. The design objective was mosquito control
-    through ventilation — the first microclimate model I had to defend as a health claim
-    rather than as a physics result.
+    CFD of airflow and thermal conditions for experimental solar housing in Tanzania, validated
+    against measured PET and UTCI with IoT sensor units built in Copenhagen and monitored
+    remotely. The design objective was mosquito control through ventilation — the first
+    microclimate model I had to defend as a health claim rather than a physics result.
   categories: [CFD, thermal comfort, IoT, field deployment]
