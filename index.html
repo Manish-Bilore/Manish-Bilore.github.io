@@ -46,7 +46,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-fdaf68e66136ffa0ee030bddfab017d3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-1c2687e8d443380aac538c22e5bb7b28.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -141,7 +141,6 @@ window.Quarto = {
 <meta property="og:description" content="Urban climate modelling, remote sensing and GeoAI for Indian cities.">
 <meta property="og:image" content="https://manish-bilore.github.io/images/nagpur-viewer.jpg">
 <meta property="og:site_name" content="Manish Bilore">
-<meta property="og:image:alt" content="3D buildings under a WRF air-temperature field, station validation panel open">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -204,11 +203,19 @@ window.Quarto = {
 
 
 
-<div class="lede">
-<p>I am an architect who moved into urban climate modelling through computational fluid dynamics. Architectural practice takes a great deal for granted, and the assumptions buried in its comfort models are what I have been chasing upward in scale ever since — from a room, to a building, to a city.</p>
+<div class="hero">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/nagpur-viewer.jpg" class="img-fluid figure-img"></p>
+<figcaption>Nagpur: 860,000 building footprints under a WRF 2 m air-temperature field, with the station validation panel open</figcaption>
+</figure>
 </div>
-<p>I build the mesoscale-to-microscale chain at <a href="https://iforest.global/">iFOREST</a> in Delhi: WRF compiled and run from scratch on cloud HPC for two Indian cities, driving PALM-4U for interventions in the existing urban fabric and City Energy Analyst for building energy response. Before that, an M.Tech in Geoinformatics at CSRE, IIT Bombay, and CFD and low-cost particulate sensing at the Royal Danish Academy, Copenhagen.</p>
-<p>What holds these together is validation. A microclimate model becomes a claim about people the moment anyone acts on it, so the work I keep is the work that carries its own error record — station comparisons, per-class classifier attribution, and a statement of where the method fails. One current thread is documenting where the 2012 Local Climate Zone typology does not describe the urban form of Indian cities.</p>
+</div>
+<div class="lede">
+<p>I build simulations of Indian cities — air, heat, water — and the records that say how far each one sits from what was actually measured.</p>
+</div>
+<p>Architecture, then computation, then geoinformatics: a room, a building, a city. Program Associate at <a href="https://iforest.global/">iFOREST</a> in Delhi, running the WRF → PALM-4U → CEA chain for Nagpur. M.Tech Geoinformatics, CSRE, IIT Bombay; MA Computation in Architecture, Royal Danish Academy, Copenhagen.</p>
+<p>A microclimate model becomes a claim about people the moment anyone acts on it. So each project here carries its own error record — what was compared, against what, and where the method fails.</p>
 <section id="recent-work" class="level2">
 <h2 data-anchor-id="recent-work">Recent work</h2>
 <div id="listing-recent" class="quarto-listing quarto-listing-container-default">
@@ -224,7 +231,7 @@ window.Quarto = {
 <a href="https://manish-bilore.github.io/nagpur-duct-site/" class="no-external">Nagpur Digital Urban Climate Twin</a>
 </h3>
 <div class="delink listing-description"><a href="https://manish-bilore.github.io/nagpur-duct-site/" class="no-external">
-<p>Whether the chain that produces a heat-mitigation number can be trusted. WRF-ARW on 7.5/1.5/0.3 km nests with a single-layer urban canopy and a city-specific anthropogenic heat profile, driving PALM-4U at 10 m and a CEA stock model for cooling demand. The site is the validation record: 2 m air temperature against station observation at Mahal, and what each configuration change actually bought. 860k building footprints and 96 h of WRF fields render in the browser.</p>
+<p>860,000 building footprints and 96 hours of WRF fields, in the browser. WRF-ARW on 7.5/1.5/0.3 km nests drives PALM-4U at 10 m and a CEA stock model for cooling demand; the site is the validation record — 2 m air temperature against station observation, and what each configuration change actually bought.</p>
 </a></div>
 </div>
 <div class="metadata">
@@ -243,7 +250,7 @@ window.Quarto = {
 <a href="https://manish-bilore.github.io/wdn-digital-twin/" class="no-external">Ontology-driven water distribution twin</a>
 </h3>
 <div class="delink listing-description"><a href="https://manish-bilore.github.io/wdn-digital-twin/" class="no-external">
-<p>An IIT Bombay campus network from an estate-office AutoCAD drawing to a queryable knowledge graph. EPANET 2.2 hydraulics over 322 pipes and 18.8 km of main, K-means district metering with a hierarchical overlay filter on elevation, pressure and demand placing 29 monitoring nodes, and an OWL 2 DL ontology aligned to SOSA/SSN and QUDT. SPARQL runs client-side over all 8,554 triples, so a question spanning hydraulics and instrumentation becomes a query rather than a fortnight of cross-referencing.</p>
+<p>An IIT Bombay campus network from an estate-office CAD drawing to a graph you can question: 322 pipes, 18.8 km of main, 29 monitoring nodes, 8,554 triples. EPANET 2.2 hydraulics, K-means district metering and an OWL 2 DL ontology, with SPARQL running client-side in the reader’s browser.</p>
 </a></div>
 </div>
 <div class="metadata">
