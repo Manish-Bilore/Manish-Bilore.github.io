@@ -130,7 +130,21 @@
     "href": "index.html",
     "title": "Manish Bilore",
     "section": "",
-    "text": "Nagpur: 859,488 building footprints under a WRF 2 m air-temperature field, with the station validation panel open\n\n\n\nOpen the Nagpur viewer 859,488 buildings, the LCZ map and 96 h of WRF fields, in the browser. About 90 MB, so it loads on click.\nArchitecture, then computation, then geoinformatics: a room, a building, a city. Program Associate at iFOREST in Delhi, running the WRF, PALM-4U and CEA chain for Nagpur. M.Tech Geoinformatics, CSRE, IIT Bombay; MA Computation in Architecture, Royal Danish Academy, Copenhagen.\nA microclimate model becomes a claim about people the moment anyone acts on it. So each project here carries its own error record: what was compared, against what, and where the method fails."
+    "text": "Nagpur: 859,488 building footprints under a WRF 2 m air-temperature field, with the station validation panel open\n\n\n\nOpen the Nagpur viewer 859,488 buildings, the LCZ map and 96 h of WRF fields, in the browser. About 90 MB, so it loads on click.\nArchitecture, then computation, then geoinformatics: a room, a building, a city.\nI am a Program Associate at iFOREST in Delhi, working across the WRF to PALM-4U to CEA chain for Digital Urban Climate Twins for Indian cities.\nI hold an M.Tech in Geoinformatics from CSRE, IIT Bombay, and an MA in Computation in Architecture from the Royal Danish Academy, Copenhagen.\nA microclimate model becomes a claim about people the moment someone acts on it. That makes validation part of the model, not an afterthought. Each project here therefore carries its own error record: what was compared, against what, how well the method performed, and where it fails."
+  },
+  {
+    "objectID": "index.html#what-i-work-on",
+    "href": "index.html#what-i-work-on",
+    "title": "Manish Bilore",
+    "section": "What I work on",
+    "text": "What I work on\n\nUrban climate simulation: WRF, PALM-4U large-eddy simulation, urban canopy schemes, LCZ mapping, and heat-risk analysis\nGeospatial computation: large-scale building footprints, GIS pipelines, spatial databases, and satellite time series\nDigital twins: coupled simulation, 3D city models, infrastructure networks, and browser-based visualisation\nSemantic infrastructure: ontology design, knowledge graphs, and interoperability across data sources\nComputational design: parametric modelling, CFD, environmental analysis, and architecture"
+  },
+  {
+    "objectID": "index.html#research-interests",
+    "href": "index.html#research-interests",
+    "title": "Manish Bilore",
+    "section": "Research interests",
+    "text": "Research interests\nI am looking for a PhD position in urban climate or boundary-layer meteorology, and am open to research roles in climate modelling, urban environmental simulation, and geospatial engineering."
   },
   {
     "objectID": "index.html#recent-work",
