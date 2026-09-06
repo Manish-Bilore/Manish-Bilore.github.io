@@ -15,7 +15,13 @@ listing:
 ---
 
 ::: {.hero}
-![Nagpur: 860,000 building footprints under a WRF 2 m air-temperature field, with the station validation panel open](images/nagpur-viewer.jpg)
+[![Nagpur: 859,488 building footprints under a WRF 2 m air-temperature field, with the station validation panel open](images/nagpur-viewer.jpg)](https://manish-bilore.github.io/urban-climate/)
+
+::: {.hero-cue}
+[Open the Nagpur viewer →](https://manish-bilore.github.io/urban-climate/) 859,488
+buildings, the LCZ map and 96 h of WRF fields, in the browser. About 90 MB, so it
+loads on click.
+:::
 :::
 
 ::: {.lede}

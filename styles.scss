@@ -73,12 +73,15 @@ h2 {
     border: 1px solid $border-color;
     display: block;
   }
-  figcaption, p.caption, .figure-caption {
-    font-family: $font-family-sans-serif;
-    font-size: 0.78rem;
-    color: $gray-500;
-    margin-top: 0.5rem;
-  }
+  figcaption, p.caption, .figure-caption { display: none; }   // the cue below carries it
+}
+
+.hero-cue {
+  font-family: $font-family-sans-serif;
+  font-size: 0.82rem;
+  color: $gray-500;
+  margin: 0.55rem 0 2.2rem;
+  a { color: $primary; font-weight: 500; }
 }
 
 // Lede paragraph on the home page.
