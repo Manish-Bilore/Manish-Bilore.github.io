@@ -1,87 +1,24 @@
 [
   {
-    "objectID": "cv.html",
-    "href": "cv.html",
-    "title": "CV",
+    "objectID": "projects/synthetic-urban-data.html",
+    "href": "projects/synthetic-urban-data.html",
+    "title": "Synthetic geospatial urban data",
     "section": "",
-    "text": "Download PDF"
+    "text": "Repository\nGranular mobility data for Indian cities is either unavailable or personal enough that releasing it is not an option. Synthetic data is a way through: reproduce the statistical structure of the real thing without reproducing anyone in it, and get a sandbox for scenarios that no observed dataset can answer."
   },
   {
-    "objectID": "cv.html#experience",
-    "href": "cv.html#experience",
-    "title": "CV",
-    "section": "Experience",
-    "text": "Experience\nProgram Associate, iFOREST (International Forum for Environment, Sustainability & Technology), Delhi · Jul 2025 to present\n\nCompiled and ran WRF from scratch on cloud HPC for two Indian cities, reaching 3.25 K RMSE on 2 m air temperature\nBuilt the Digital Urban Climate Twin chain (WRF, then PALM-4U, then CEA) for testing heat-island interventions\nAutomated PALM-4U static driver generation and urban data assembly\nAutomated WUDAPT training-area generation from urban morphometry, giving LCZ maps at 75 to 80% accuracy\nBenchmarked XGBoost against a CNN on identical inputs to attribute per-class LCZ performance\n\nResearch Assistant, Royal Danish Academy, Copenhagen · Aug 2021 to Dec 2022\n\nDeveloped four low-cost IoT particulate sensors that outperformed commercial units, deployed and monitored remotely, including a six-month campaign in Tanzania\nBuilt RANS CFD models in OpenFOAM and ANSYS Fluent for architectural wind flow\nValidated model output against measured PET and UTCI in experimental solar homes\n\nProject Manager, Fairfest Media, Mumbai · Jun 2018 to Jul 2019\n\nLed a multi-city team producing urban-sector insight for partners\nMarket segmentation and financial modelling for trade-show positioning"
+    "objectID": "projects/synthetic-urban-data.html#three-scripts",
+    "href": "projects/synthetic-urban-data.html#three-scripts",
+    "title": "Synthetic geospatial urban data",
+    "section": "Three scripts",
+    "text": "Three scripts\nPopulation. Builds a synthetic population for Bandra carrying the demographic and socio-economic structure of the ward, from points of interest and a boundary shapefile.\nMobility. Simulates trips probabilistically against land use, transit availability and behavioural assumptions; trip points are generated through a kernel density surface rather than uniformly, so origins concentrate where activity concentrates.\nEvaluation. Calibrates the output by comparing aggregate metrics with the limited real data that is available, then models demand per hexagon with a random forest and tests the result for spatial structure with local Moran’s I.\n\n\n\nLocal Moran’s I clusters of predicted demand across the hexagon grid. Whether the synthetic surface clusters at all, and where, is the check on whether the generator reproduced spatial structure or only marginal distributions"
   },
   {
-    "objectID": "cv.html#education",
-    "href": "cv.html#education",
-    "title": "CV",
-    "section": "Education",
-    "text": "Education\n\nM.Tech Geoinformatics, CSRE, IIT Bombay · 2023 to 2025\nMA Computation in Architecture, CITA, Royal Danish Academy, Copenhagen · 2019 to 2021\nB.Arch, KRVIA, University of Mumbai · 2012 to 2017"
-  },
-  {
-    "objectID": "cv.html#selected-projects",
-    "href": "cv.html#selected-projects",
-    "title": "CV",
-    "section": "Selected projects",
-    "text": "Selected projects\nSee Work. Also:\n\nPolicy-intelligence decision support for spatial governance, 2025 to present\nFlood segmentation with Attention U-Net on Sentinel-1/2 in Google Earth Engine, F1 0.823\nGame-engine acoustic modelling for urban digital twins"
-  },
-  {
-    "objectID": "cv.html#skills",
-    "href": "cv.html#skills",
-    "title": "CV",
-    "section": "Skills",
-    "text": "Skills\n\nUrban climate: WRF · PALM-4U (LES) · CEA · ENVI-met · WUDAPT/LCZ\nSimulation: OpenFOAM · ANSYS Fluent · RANS/CFD · Unity\nGIS and remote sensing: QGIS · ArcGIS · PostGIS · Google Earth Engine · SNAP · MintPy · LiCSBAS\nComputing: Python · R · SQL · C/C++ · Linux · cloud HPC\nGeoAI: XGBoost · CNN · Attention U-Net · SHAP\nSemantics: OWL · RDF · Protégé · ontology design · Neo4j\nInstrumentation: low-cost IoT sensing, field deployment\nLanguages: English · Hindi · Marathi"
-  },
-  {
-    "objectID": "projects/tanzania-ventilation.html",
-    "href": "projects/tanzania-ventilation.html",
-    "title": "Ventilation design as disease control",
-    "section": "",
-    "text": "Research Assistant, Institute of Architecture and Technology, Royal Danish Academy, Copenhagen, 2021–2022.\nAirflow and thermal conditions in experimental solar housing, modelled as mesh-based RANS CFD in OpenFOAM and ANSYS Fluent. The design objective was not comfort alone: ventilation was the intervention being tested for mosquito control, so the model had to hold up as a health claim and not only as a physics result. That constraint is what pushed the work from simulation into measurement."
-  },
-  {
-    "objectID": "projects/tanzania-ventilation.html#measuring-the-thing-you-modelled",
-    "href": "projects/tanzania-ventilation.html#measuring-the-thing-you-modelled",
-    "title": "Ventilation design as disease control",
-    "section": "Measuring the thing you modelled",
-    "text": "Measuring the thing you modelled\nI assembled Internet-of-Things sensor units, deployed them on site in Tanzania, and monitored them remotely from Copenhagen over a six-month campaign. Model output was validated against measured Physiological Equivalent Temperature and Universal Thermal Climate Index. Four low-cost particulate units built for the same programme outperformed the commercial instruments they were checked against."
-  },
-  {
-    "objectID": "projects/tanzania-ventilation.html#why-it-still-matters-to-me",
-    "href": "projects/tanzania-ventilation.html#why-it-still-matters-to-me",
-    "title": "Ventilation design as disease control",
-    "section": "Why it still matters to me",
-    "text": "Why it still matters to me\nThis was the first time a microclimate model I built was answerable to an outcome measured in people rather than in pascals. Everything since, the mesoscale-to-microscale chain, the insistence on a validation record travelling with the model, comes from that."
-  },
-  {
-    "objectID": "projects/landslide-fuzzy-inference.html",
-    "href": "projects/landslide-fuzzy-inference.html",
-    "title": "Landslide susceptibility by fuzzy inference",
-    "section": "",
-    "text": "Repository\nPredictive mapping of landslide-prone terrain in a district where the training inventory is thin and the consequences of a false negative are not symmetric with those of a false positive."
-  },
-  {
-    "objectID": "projects/landslide-fuzzy-inference.html#approach",
-    "href": "projects/landslide-fuzzy-inference.html#approach",
-    "title": "Landslide susceptibility by fuzzy inference",
-    "section": "Approach",
-    "text": "Approach\nTwelve conditioning parameters are assembled in R, then combined in a fuzzy inference system rather than a purely data-driven classifier. The choice is deliberate: where the landslide inventory is small, a rule base that a geomorphologist can read and argue with is worth more than a marginal gain in fitted accuracy from a model that cannot be interrogated.\n\n\n\n\n\n\n\n\nStage\nWhat it produces\nScript\n\n\n\n\nLand cover\nRandom-forest classification of Sentinel-2\n01_LULC_RF.Rmd\n\n\nVegetation\nNDVI as a separate continuous conditioning layer\n02_NDVI.Rmd\n\n\nTerrain\nSlope, aspect and curvature from the Cartosat DEM\n03_Cartosat_DEM.Rmd\n\n\nAssembly\nParameter stack, unnormalised, as the FIS input frame\n04_Dataframe_Generation.Rmd\n\n\nInference\nMembership functions and rule base over the stack\n05_FuzzyInference.R\n\n\n\n\n\n\nRandom-forest land cover over Wayanad district, one of the twelve conditioning layers"
-  },
-  {
-    "objectID": "projects/landslide-fuzzy-inference.html#where-it-goes-next",
-    "href": "projects/landslide-fuzzy-inference.html#where-it-goes-next",
-    "title": "Landslide susceptibility by fuzzy inference",
-    "section": "Where it goes next",
-    "text": "Where it goes next\nThe fuzzy system is the baseline for a comparison rather than the end of the work: ANFIS, then neural and ensemble approaches over the same parameter stack, so that differences between models can be attributed to the model and not to the inputs. The reference method is this Computers & Geosciences paper (2020). ⟨Replace with the full citation before publishing the page.⟩"
-  },
-  {
-    "objectID": "projects/landslide-fuzzy-inference.html#limitations",
-    "href": "projects/landslide-fuzzy-inference.html#limitations",
-    "title": "Landslide susceptibility by fuzzy inference",
+    "objectID": "projects/synthetic-urban-data.html#limitations",
+    "href": "projects/synthetic-urban-data.html#limitations",
+    "title": "Synthetic geospatial urban data",
     "section": "Limitations",
-    "text": "Limitations\nThe inventory constrains everything downstream. Membership functions are set from the literature and from terrain reasoning rather than fitted, so the map should be read as a ranking of relative susceptibility, not as a probability."
+    "text": "Limitations\nSynthetic data inherits its assumptions and hides them well. The population is representative in aggregate and fictitious individually, so results hold at the scale of the calibration and not below it. The calibration itself is only as good as the sparse observations it is fitted against, which is the same data scarcity the method was built to work around."
   },
   {
     "objectID": "projects/surface-runoff-mitigation.html",
@@ -124,6 +61,76 @@
     "title": "Surface run-off water mitigation",
     "section": "Where it went",
     "text": "Where it went\nThis is the earliest work on this site and the origin of most of what follows. The chain here, terrain, simulation, a control to test against, then intervention, is the one I now run with WRF and PALM-4U instead of particles, over cities instead of blocks, and against station observations instead of a bare-terrain run."
+  },
+  {
+    "objectID": "projects/landslide-fuzzy-inference.html",
+    "href": "projects/landslide-fuzzy-inference.html",
+    "title": "Landslide susceptibility by fuzzy inference",
+    "section": "",
+    "text": "Repository\nPredictive mapping of landslide-prone terrain in a district where the training inventory is thin and the consequences of a false negative are not symmetric with those of a false positive."
+  },
+  {
+    "objectID": "projects/landslide-fuzzy-inference.html#approach",
+    "href": "projects/landslide-fuzzy-inference.html#approach",
+    "title": "Landslide susceptibility by fuzzy inference",
+    "section": "Approach",
+    "text": "Approach\nTwelve conditioning parameters are assembled in R, then combined in a fuzzy inference system rather than a purely data-driven classifier. The choice is deliberate: where the landslide inventory is small, a rule base that a geomorphologist can read and argue with is worth more than a marginal gain in fitted accuracy from a model that cannot be interrogated.\n\n\n\n\n\n\n\n\nStage\nWhat it produces\nScript\n\n\n\n\nLand cover\nRandom-forest classification of Sentinel-2\n01_LULC_RF.Rmd\n\n\nVegetation\nNDVI as a separate continuous conditioning layer\n02_NDVI.Rmd\n\n\nTerrain\nSlope, aspect and curvature from the Cartosat DEM\n03_Cartosat_DEM.Rmd\n\n\nAssembly\nParameter stack, unnormalised, as the FIS input frame\n04_Dataframe_Generation.Rmd\n\n\nInference\nMembership functions and rule base over the stack\n05_FuzzyInference.R\n\n\n\n\n\n\nRandom-forest land cover over Wayanad district, one of the twelve conditioning layers"
+  },
+  {
+    "objectID": "projects/landslide-fuzzy-inference.html#where-it-goes-next",
+    "href": "projects/landslide-fuzzy-inference.html#where-it-goes-next",
+    "title": "Landslide susceptibility by fuzzy inference",
+    "section": "Where it goes next",
+    "text": "Where it goes next\nThe fuzzy system is the baseline for a comparison rather than the end of the work: ANFIS, then neural and ensemble approaches over the same parameter stack, so that differences between models can be attributed to the model and not to the inputs. The reference method is this Computers & Geosciences paper (2020). ⟨Replace with the full citation before publishing the page.⟩"
+  },
+  {
+    "objectID": "projects/landslide-fuzzy-inference.html#limitations",
+    "href": "projects/landslide-fuzzy-inference.html#limitations",
+    "title": "Landslide susceptibility by fuzzy inference",
+    "section": "Limitations",
+    "text": "Limitations\nThe inventory constrains everything downstream. Membership functions are set from the literature and from terrain reasoning rather than fitted, so the map should be read as a ranking of relative susceptibility, not as a probability."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Work",
+    "section": "",
+    "text": "Projects with their own site open in a new tab; the rest are written up here.\n\n\n\n\n\n\n\n\n\n\nSpace Syntax, decomposed\n\n\n\nspace syntax\n\nstreet networks\n\ndepthmapX\n\ncityseer\n\nOpenStreetMap\n\n\n\nSpace Syntax (depthmapX) and street-network analysis (cityseer) rank the same streets of Copenhagen and Mumbai differently. A five-rung ladder changes one design choice at a time, graph, cost, normalisation, engine, axial lines, and measures what each does to rank agreement. Normalisation is the largest single step: at 400 m, metric closeness and NAIN are unrelated (Spearman ρ ≈ 0), and junction consolidation alone changes Copenhagen’s street count 4.2×.\n\n\n\n\n\nOct 9, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nSAR flood mapping without Earth Engine\n\n\n\nSAR\n\nSentinel-1\n\nflood\n\ndeep learning\n\nInSAR coherence\n\n\n\nSentinel-1 flood extents for Indian events, rebuilt from public archives on one laptop: thresholding and change detection, InSAR coherence, and five segmentation networks trained on Sen1Floods11, in a Quarto report that regenerates per event. The networks score 0.663–0.681 test IoU yet map extents that differ 3–3.5× on the same scene. Kerala 2018 comes to 508 km², Assam 2022 to 320 km²; for Mumbai 2024 the flood is not separable at all, because revisit, not method, is the binding constraint.\n\n\n\n\n\nSep 24, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nAnthropogenic heat and air-conditioner adoption in Greater Mumbai\n\n\n\nanthropogenic heat\n\nUBEM\n\nagent-based model\n\nurban climate\n\nMumbai\n\n\n\nA bottom-up building energy model over all 580,890 buildings in the 24 BMC wards, coupled to a household agent-based model of air-conditioner purchase, with waste heat fed back into next year’s discomfort. Mean heat flux over built cells rises from 20.58 to 23.81 W/m² between 2026 and 2040 as AC ownership goes from 17.9% to 56.2%; informal dwellings run about 1.6 °C hotter than tower flats. An uncalibrated prototype: the trajectories are structural, not predictive.\n\n\n\n\n\nSep 19, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nNagpur Digital Urban Climate Twin\n\n\n\nurban climate\n\nWRF\n\nPALM-4U\n\nLCZ\n\nvalidation\n\n\n\n860,000 building footprints and 96 hours of WRF fields, in the browser. WRF-ARW on 7.5/1.5/0.3 km nests drives PALM-4U at 10 m and a CEA stock model for cooling demand; the site is the validation record: 2 m air temperature against station observation, and what each configuration change actually bought.\n\n\n\n\n\nSep 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nOntology-driven water distribution twin\n\n\n\ndigital twin\n\nEPANET\n\nontology\n\nSPARQL\n\nIoT\n\n\n\nAn IIT Bombay campus network from an estate-office CAD drawing to a graph you can question: 322 pipes, 18.8 km of main, 29 monitoring nodes, 8,554 triples. EPANET 2.2 hydraulics, K-means district metering and an OWL 2 DL ontology, with SPARQL running client-side in the reader’s browser.\n\n\n\n\n\nAug 20, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nInSAR time series for urban land subsidence\n\n\n\nInSAR\n\nSentinel-1\n\nsubsidence\n\nXGBoost\n\nthesis\n\n\n\nM.Tech thesis. Two open-source Sentinel-1 time-series chains, MintPy on the Alaska Satellite Facility cloud and LiCSBAS on LiCSAR interferograms, run over the same frame to separate what a subsidence map measures from what its processing decides. Lucknow reaches −63.9 mm/yr; the deformation field then trains an XGBoost susceptibility model (AUC 0.705) for the ground with no scatterers to measure.\n\n\n\n\n\nJun 30, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nLandslide susceptibility by fuzzy inference\n\n\n\nlandslide\n\nfuzzy inference\n\nrandom forest\n\nSentinel-2\n\nR\n\n\n\nTwelve conditioning parameters over Wayanad district: random-forest land cover from Sentinel-2, NDVI and Cartosat DEM derivatives feeding a fuzzy inference system, chosen so the rule base stays legible where the landslide inventory is thin.\n\n\n\n\n\nNov 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nSynthetic geospatial urban data\n\n\n\nsynthetic data\n\nmobility\n\nrandom forest\n\nspatial statistics\n\nR\n\n\n\nTrip data for Bandra, Mumbai, where none exists to plan with. A synthetic population carrying local socio-economic structure, mobility simulated against land use and transit, calibrated against what little real data exists, then demand predicted per hexagon and tested for spatial clustering.\n\n\n\n\n\nNov 1, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nVentilation design as disease control\n\n\n\nCFD\n\nthermal comfort\n\nIoT\n\nfield deployment\n\n\n\nCFD of airflow and thermal conditions for experimental solar housing in Tanzania, validated against measured PET and UTCI with IoT sensor units built in Copenhagen and monitored remotely. The design objective was mosquito control through ventilation, the first microclimate model I had to defend as a health claim rather than a physics result.\n\n\n\n\n\nDec 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nSurface run-off water mitigation\n\n\n\nparticle simulation\n\nflood\n\nlandscape\n\nprocedural design\n\nthesis\n\n\n\nMA thesis, CITA studio, Royal Danish Academy. Run the water first: 100,000-particle simulation of rainfall and surface water rise over the terrain as it is, then a procedural script that places mitigating elements against the inundation it exposes. Five interventions, each graded by simulating the same terrain with and without it.\n\n\n\n\n\nJul 1, 2021\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "CV",
+    "section": "",
+    "text": "Download PDF"
+  },
+  {
+    "objectID": "cv.html#experience",
+    "href": "cv.html#experience",
+    "title": "CV",
+    "section": "Experience",
+    "text": "Experience\nProgram Associate, iFOREST (International Forum for Environment, Sustainability & Technology), Delhi · Jul 2025 to present\n\nCompiled and ran WRF from scratch on cloud HPC for two Indian cities, reaching 3.25 K RMSE on 2 m air temperature\nBuilt the Digital Urban Climate Twin chain (WRF, then PALM-4U, then CEA) for testing heat-island interventions\nAutomated PALM-4U static driver generation and urban data assembly\nAutomated WUDAPT training-area generation from urban morphometry, giving LCZ maps at 75 to 80% accuracy\nBenchmarked XGBoost against a CNN on identical inputs to attribute per-class LCZ performance\n\nResearch Assistant, Royal Danish Academy, Copenhagen · Aug 2021 to Dec 2022\n\nDeveloped four low-cost IoT particulate sensors that outperformed commercial units, deployed and monitored remotely, including a six-month campaign in Tanzania\nBuilt RANS CFD models in OpenFOAM and ANSYS Fluent for architectural wind flow\nValidated model output against measured PET and UTCI in experimental solar homes\n\nProject Manager, Fairfest Media, Mumbai · Jun 2018 to Jul 2019\n\nLed a multi-city team producing urban-sector insight for partners\nMarket segmentation and financial modelling for trade-show positioning"
+  },
+  {
+    "objectID": "cv.html#education",
+    "href": "cv.html#education",
+    "title": "CV",
+    "section": "Education",
+    "text": "Education\n\nM.Tech Geoinformatics, CSRE, IIT Bombay · 2023 to 2025\nMA Computation in Architecture, CITA, Royal Danish Academy, Copenhagen · 2019 to 2021\nB.Arch, KRVIA, University of Mumbai · 2012 to 2017"
+  },
+  {
+    "objectID": "cv.html#selected-projects",
+    "href": "cv.html#selected-projects",
+    "title": "CV",
+    "section": "Selected projects",
+    "text": "Selected projects\nSee Work. Also:\n\nPolicy-intelligence decision support for spatial governance, 2025 to present\nFlood segmentation with Attention U-Net on Sentinel-1/2 in Google Earth Engine, F1 0.823\nGame-engine acoustic modelling for urban digital twins"
+  },
+  {
+    "objectID": "cv.html#skills",
+    "href": "cv.html#skills",
+    "title": "CV",
+    "section": "Skills",
+    "text": "Skills\n\nUrban climate: WRF · PALM-4U (LES) · CEA · ENVI-met · WUDAPT/LCZ\nSimulation: OpenFOAM · ANSYS Fluent · RANS/CFD · Unity\nGIS and remote sensing: QGIS · ArcGIS · PostGIS · Google Earth Engine · SNAP · MintPy · LiCSBAS\nComputing: Python · R · SQL · C/C++ · Linux · cloud HPC\nGeoAI: XGBoost · CNN · Attention U-Net · SHAP\nSemantics: OWL · RDF · Protégé · ontology design · Neo4j\nInstrumentation: low-cost IoT sensing, field deployment\nLanguages: English · Hindi · Marathi"
   },
   {
     "objectID": "index.html",
@@ -196,31 +203,24 @@
     "text": "Limitations\nLOS is not vertical. Every rate here is line-of-sight. Converting to vertical motion assumes horizontal displacement is negligible, which in a groundwater-driven setting is defensible and still an assumption.\nEverything is relative to a reference pixel. Both chains measure deformation against a point assumed stable. If that point moves, the whole field shifts with it.\nThe susceptibility surface is an interpolated model output, not an observation. Kriging an XGBoost probability produces something smooth and readable that no instrument ever measured. It should be read as a ranking of relative susceptibility.\nLand cover dominates the model. In the gain decomposition, the land-cover predictor carries the large majority of the model’s explanatory weight, with slope a distant second. That is close to saying the classifier has learnt where the built-up area is, which is also where the labels come from, since scatterers are concentrated there. Breaking that circularity needs predictors the InSAR product does not already encode: groundwater levels, soil profile, subsurface geology."
   },
   {
-    "objectID": "projects/synthetic-urban-data.html",
-    "href": "projects/synthetic-urban-data.html",
-    "title": "Synthetic geospatial urban data",
+    "objectID": "projects/tanzania-ventilation.html",
+    "href": "projects/tanzania-ventilation.html",
+    "title": "Ventilation design as disease control",
     "section": "",
-    "text": "Repository\nGranular mobility data for Indian cities is either unavailable or personal enough that releasing it is not an option. Synthetic data is a way through: reproduce the statistical structure of the real thing without reproducing anyone in it, and get a sandbox for scenarios that no observed dataset can answer."
+    "text": "Research Assistant, Institute of Architecture and Technology, Royal Danish Academy, Copenhagen, 2021–2022.\nAirflow and thermal conditions in experimental solar housing, modelled as mesh-based RANS CFD in OpenFOAM and ANSYS Fluent. The design objective was not comfort alone: ventilation was the intervention being tested for mosquito control, so the model had to hold up as a health claim and not only as a physics result. That constraint is what pushed the work from simulation into measurement."
   },
   {
-    "objectID": "projects/synthetic-urban-data.html#three-scripts",
-    "href": "projects/synthetic-urban-data.html#three-scripts",
-    "title": "Synthetic geospatial urban data",
-    "section": "Three scripts",
-    "text": "Three scripts\nPopulation. Builds a synthetic population for Bandra carrying the demographic and socio-economic structure of the ward, from points of interest and a boundary shapefile.\nMobility. Simulates trips probabilistically against land use, transit availability and behavioural assumptions; trip points are generated through a kernel density surface rather than uniformly, so origins concentrate where activity concentrates.\nEvaluation. Calibrates the output by comparing aggregate metrics with the limited real data that is available, then models demand per hexagon with a random forest and tests the result for spatial structure with local Moran’s I.\n\n\n\nLocal Moran’s I clusters of predicted demand across the hexagon grid. Whether the synthetic surface clusters at all, and where, is the check on whether the generator reproduced spatial structure or only marginal distributions"
+    "objectID": "projects/tanzania-ventilation.html#measuring-the-thing-you-modelled",
+    "href": "projects/tanzania-ventilation.html#measuring-the-thing-you-modelled",
+    "title": "Ventilation design as disease control",
+    "section": "Measuring the thing you modelled",
+    "text": "Measuring the thing you modelled\nI assembled Internet-of-Things sensor units, deployed them on site in Tanzania, and monitored them remotely from Copenhagen over a six-month campaign. Model output was validated against measured Physiological Equivalent Temperature and Universal Thermal Climate Index. Four low-cost particulate units built for the same programme outperformed the commercial instruments they were checked against."
   },
   {
-    "objectID": "projects/synthetic-urban-data.html#limitations",
-    "href": "projects/synthetic-urban-data.html#limitations",
-    "title": "Synthetic geospatial urban data",
-    "section": "Limitations",
-    "text": "Limitations\nSynthetic data inherits its assumptions and hides them well. The population is representative in aggregate and fictitious individually, so results hold at the scale of the calibration and not below it. The calibration itself is only as good as the sparse observations it is fitted against, which is the same data scarcity the method was built to work around."
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Work",
-    "section": "",
-    "text": "Projects with their own site open in a new tab; the rest are written up here.\n\n\n\n\n\n\n\n\n\n\nNagpur Digital Urban Climate Twin\n\n\n\nurban climate\n\nWRF\n\nPALM-4U\n\nLCZ\n\nvalidation\n\n\n\n860,000 building footprints and 96 hours of WRF fields, in the browser. WRF-ARW on 7.5/1.5/0.3 km nests drives PALM-4U at 10 m and a CEA stock model for cooling demand; the site is the validation record: 2 m air temperature against station observation, and what each configuration change actually bought.\n\n\n\n\n\nSep 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nOntology-driven water distribution twin\n\n\n\ndigital twin\n\nEPANET\n\nontology\n\nSPARQL\n\nIoT\n\n\n\nAn IIT Bombay campus network from an estate-office CAD drawing to a graph you can question: 322 pipes, 18.8 km of main, 29 monitoring nodes, 8,554 triples. EPANET 2.2 hydraulics, K-means district metering and an OWL 2 DL ontology, with SPARQL running client-side in the reader’s browser.\n\n\n\n\n\nAug 20, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nInSAR time series for urban land subsidence\n\n\n\nInSAR\n\nSentinel-1\n\nsubsidence\n\nXGBoost\n\nthesis\n\n\n\nM.Tech thesis. Two open-source Sentinel-1 time-series chains, MintPy on the Alaska Satellite Facility cloud and LiCSBAS on LiCSAR interferograms, run over the same frame to separate what a subsidence map measures from what its processing decides. Lucknow reaches −63.9 mm/yr; the deformation field then trains an XGBoost susceptibility model (AUC 0.705) for the ground with no scatterers to measure.\n\n\n\n\n\nJun 30, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nLandslide susceptibility by fuzzy inference\n\n\n\nlandslide\n\nfuzzy inference\n\nrandom forest\n\nSentinel-2\n\nR\n\n\n\nTwelve conditioning parameters over Wayanad district: random-forest land cover from Sentinel-2, NDVI and Cartosat DEM derivatives feeding a fuzzy inference system, chosen so the rule base stays legible where the landslide inventory is thin.\n\n\n\n\n\nNov 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nSynthetic geospatial urban data\n\n\n\nsynthetic data\n\nmobility\n\nrandom forest\n\nspatial statistics\n\nR\n\n\n\nTrip data for Bandra, Mumbai, where none exists to plan with. A synthetic population carrying local socio-economic structure, mobility simulated against land use and transit, calibrated against what little real data exists, then demand predicted per hexagon and tested for spatial clustering.\n\n\n\n\n\nNov 1, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nVentilation design as disease control\n\n\n\nCFD\n\nthermal comfort\n\nIoT\n\nfield deployment\n\n\n\nCFD of airflow and thermal conditions for experimental solar housing in Tanzania, validated against measured PET and UTCI with IoT sensor units built in Copenhagen and monitored remotely. The design objective was mosquito control through ventilation, the first microclimate model I had to defend as a health claim rather than a physics result.\n\n\n\n\n\nDec 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nSurface run-off water mitigation\n\n\n\nparticle simulation\n\nflood\n\nlandscape\n\nprocedural design\n\nthesis\n\n\n\nMA thesis, CITA studio, Royal Danish Academy. Run the water first: 100,000-particle simulation of rainfall and surface water rise over the terrain as it is, then a procedural script that places mitigating elements against the inundation it exposes. Five interventions, each graded by simulating the same terrain with and without it.\n\n\n\n\n\nJul 1, 2021\n\n\n\n\n\nNo matching items"
+    "objectID": "projects/tanzania-ventilation.html#why-it-still-matters-to-me",
+    "href": "projects/tanzania-ventilation.html#why-it-still-matters-to-me",
+    "title": "Ventilation design as disease control",
+    "section": "Why it still matters to me",
+    "text": "Why it still matters to me\nThis was the first time a microclimate model I built was answerable to an outcome measured in people rather than in pascals. Everything since, the mesoscale-to-microscale chain, the insistence on a validation record travelling with the model, comes from that."
   }
 ]

@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://manish-bilore.github.io/cv.html</loc>
-    <lastmod>2026-09-06T12:25:30.266Z</lastmod>
-  </url>
-  <url>
-    <loc>https://manish-bilore.github.io/projects/tanzania-ventilation.html</loc>
-    <lastmod>2026-09-06T12:25:30.350Z</lastmod>
-  </url>
-  <url>
-    <loc>https://manish-bilore.github.io/projects/landslide-fuzzy-inference.html</loc>
-    <lastmod>2026-09-06T12:25:30.350Z</lastmod>
+    <loc>https://manish-bilore.github.io/projects/synthetic-urban-data.html</loc>
+    <lastmod>2026-10-09T15:30:01.140Z</lastmod>
   </url>
   <url>
     <loc>https://manish-bilore.github.io/projects/surface-runoff-mitigation.html</loc>
-    <lastmod>2026-09-06T12:25:30.350Z</lastmod>
+    <lastmod>2026-10-09T15:30:01.140Z</lastmod>
   </url>
   <url>
-    <loc>https://manish-bilore.github.io/index.html</loc>
-    <lastmod>2026-09-06T12:25:30.349Z</lastmod>
-  </url>
-  <url>
-    <loc>https://manish-bilore.github.io/projects/insar-subsidence.html</loc>
-    <lastmod>2026-09-06T12:25:30.350Z</lastmod>
-  </url>
-  <url>
-    <loc>https://manish-bilore.github.io/projects/synthetic-urban-data.html</loc>
-    <lastmod>2026-09-06T12:25:30.350Z</lastmod>
+    <loc>https://manish-bilore.github.io/projects/landslide-fuzzy-inference.html</loc>
+    <lastmod>2026-10-09T15:30:01.140Z</lastmod>
   </url>
   <url>
     <loc>https://manish-bilore.github.io/projects.html</loc>
-    <lastmod>2026-09-06T12:25:30.349Z</lastmod>
+    <lastmod>2026-10-09T15:30:01.139Z</lastmod>
+  </url>
+  <url>
+    <loc>https://manish-bilore.github.io/cv.html</loc>
+    <lastmod>2026-10-09T15:30:01.063Z</lastmod>
+  </url>
+  <url>
+    <loc>https://manish-bilore.github.io/index.html</loc>
+    <lastmod>2026-10-09T15:30:01.139Z</lastmod>
+  </url>
+  <url>
+    <loc>https://manish-bilore.github.io/projects/insar-subsidence.html</loc>
+    <lastmod>2026-10-09T15:30:01.140Z</lastmod>
+  </url>
+  <url>
+    <loc>https://manish-bilore.github.io/projects/tanzania-ventilation.html</loc>
+    <lastmod>2026-10-09T15:30:01.140Z</lastmod>
   </url>
 </urlset>
