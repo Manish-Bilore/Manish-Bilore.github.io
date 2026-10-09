@@ -4,6 +4,48 @@
 #   image       images/..., local files, so nothing breaks if a project site moves
 #   categories  free text; they become the filter chips on the Work page
 
+- title: "Space Syntax, decomposed"
+  path: "https://manish-bilore.github.io/space-syntax-decomposed/"
+  date: "2026-10-09"
+  description: >
+    Space Syntax (depthmapX) and street-network analysis (cityseer) rank the same streets of
+    Copenhagen and Mumbai differently. A five-rung ladder changes one design choice at a time,
+    graph, cost, normalisation, engine, axial lines, and measures what each does to rank
+    agreement. Normalisation is the largest single step: at 400 m, metric closeness and NAIN
+    are unrelated (Spearman ρ ≈ 0), and junction consolidation alone changes Copenhagen's
+    street count 4.2×.
+  image: "images/space-syntax-windows.jpg"
+  image-alt: "Indre By, Colaba and Dharavi at the same scale under NAIN, NACH and metric harmonic closeness"
+  categories: [space syntax, street networks, depthmapX, cityseer, OpenStreetMap]
+
+- title: "SAR flood mapping without Earth Engine"
+  path: "https://manish-bilore.github.io/sar-flood-mapping/"
+  date: "2026-09-24"
+  description: >
+    Sentinel-1 flood extents for Indian events, rebuilt from public archives on one laptop:
+    thresholding and change detection, InSAR coherence, and five segmentation networks trained
+    on Sen1Floods11, in a Quarto report that regenerates per event. The networks score
+    0.663–0.681 test IoU yet map extents that differ 3–3.5× on the same scene. Kerala 2018
+    comes to 508 km², Assam 2022 to 320 km²; for Mumbai 2024 the flood is not separable at
+    all, because revisit, not method, is the binding constraint.
+  image: "images/sar-flood-kerala.jpg"
+  image-alt: "Kerala 2018: share of methods agreeing on flooding, and the final extent over co-event VV backscatter"
+  categories: [SAR, Sentinel-1, flood, deep learning, InSAR coherence]
+
+- title: "Anthropogenic heat and air-conditioner adoption in Greater Mumbai"
+  path: "https://manish-bilore.github.io/mumbai-anthropogenic-heat/"
+  date: "2026-09-19"
+  description: >
+    A bottom-up building energy model over all 580,890 buildings in the 24 BMC wards, coupled
+    to a household agent-based model of air-conditioner purchase, with waste heat fed back
+    into next year's discomfort. Mean heat flux over built cells rises from 20.58 to
+    23.81 W/m² between 2026 and 2040 as AC ownership goes from 17.9% to 56.2%; informal
+    dwellings run about 1.6 °C hotter than tower flats. An uncalibrated prototype: the
+    trajectories are structural, not predictive.
+  image: "images/mumbai-qf-grid.png"
+  image-alt: "Anthropogenic heat flux across Greater Mumbai on a 100 m grid"
+  categories: [anthropogenic heat, UBEM, agent-based model, urban climate, Mumbai]
+
 - title: "Nagpur Digital Urban Climate Twin"
   path: "https://manish-bilore.github.io/nagpur-duct-site/"
   date: "2026-09-01"
